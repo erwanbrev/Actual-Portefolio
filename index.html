@@ -31,6 +31,13 @@
                 <li><a href="./pages/contact.html">Me contacter</a></li>
             </ul>
         </nav>
+        <!-- menu burger -->
+        <nav class="click-menu-burger">
+            <ul>
+                <li><a href="./pages/front.html">Front-End</a></li>
+                <li><a href="./pages/contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- contenu du site -->
     <main>
@@ -39,7 +46,7 @@
         <!-- article concernant mon profil -->
         <article class="news-container">
             <section class="latest-news">
-                <h2 class="title-second-home">Actualité Front-End</h2>
+                <h2 class="title-second-home" id="title-second-home-mobile">Actualité Front-End</h2>
                 <p>Actuellement étudiant en <strong>Développement Web Front-End</strong>, je m'intéresse au métier de
                     développeur et aux
                     actualités informatiques, crypto-monnaies, nouveautés en tout genre... </p>
@@ -65,19 +72,21 @@
             <article class="content-present-article">
                 <div itemscope itemtype="https://schema.org/Organization">
                     <h2 class="title-second-home" itemprop="name">Institut Marie-Thérèse Solacroup</h2>
-                    <br>
                     <p>Je passe prochainement l'examen oral pour obtenir la <strong>certification développeur web et web
-                            mobile
-                            Front-End</strong>, qui elle, a eu la durée d'un an.</p>
+                            mobile Front-End</strong>, qui elle, a eu la durée d'un an.</p>
                     <p> Lors de la rentrée suivante, je vais pouvoir commencer la <strong>certification développeur
                             Back-End</strong> et ainsi travailler pour avoir la <strong>mention FullStack</strong>.
                     </p>
                     <a class="design-ext-link" href="https://www.institutsolacroup.com/" target="_blank">Voir le
                         site de l'IMTS</a>
                 </div>
-                <div>
-                    <img class="size-img-home-article" src="./img/home/imtsMaps.png" alt="maps-IMTS">
-                    <address>4 Avenue du Château Hébert, 35800 DINARD</address>
+                <div class="school-address">
+                    <img class="size-img-home-article" src="./img/home/imtsMaps.png"
+                        alt="vue-carte-maps-de-linstitut-marie-thérèse-solacroup">
+                    <a
+                        href="https://www.google.fr/maps/place/Institut+Marie+Th%C3%A9r%C3%A8se+Solacroup/@48.6400984,-2.077812,17z/data=!4m13!1m7!3m6!1s0x480e80a206269f5d:0x7f5e30f69d3173a9!2s4+Av.+du+Ch%C3%A2teau+H%C3%A9bert,+35800+Dinard!3b1!8m2!3d48.6400949!4d-2.0756233!3m4!1s0x480e80a24963d133:0x45f54d27b35b9bff!8m2!3d48.6399737!4d-2.0756617">
+                        <address>4 Avenue du Château Hébert, 35800 DINARD</address>
+                    </a>
                 </div>
             </article>
             <!-- separateur annoncant le theme suivant -->
@@ -98,9 +107,13 @@
                     <a class="design-ext-link" href="https://www.ism-lapro.fr/" target="_blank">Voir le site du lycée La
                         Providence</a>
                 </div>
-                <div>
-                    <img class="size-img-home-article" src="./img/home/laproMaps.png" alt="maps-lycee-la-providence">
-                    <address>27 Rue de Toulouse, 35400 SAINT-MALO</address>
+                <div class="school-address">
+                    <img class="size-img-home-article" src="./img/home/laproMaps.png"
+                        alt="vue-carte-maps-du-lycee-la-providence">
+                    <a
+                        href="https://www.google.fr/maps/place/27+Rue+de+Toulouse,+35400+Saint-Malo/@48.6465931,-2.0293407,17z/data=!3m1!4b1!4m5!3m4!1s0x480e811a06b40aed:0xaa586bf1ff930d0!8m2!3d48.6465896!4d-2.027152">
+                        <address>27 Rue de Toulouse, 35400 SAINT-MALO</address>
+                    </a>
                 </div>
             </article>
             <!-- article concernant Maupertuis -->
@@ -114,9 +127,13 @@
                     <a class="design-ext-link" href="https://www.lyceemaupertuis.bzh/" target="_blank">Voir le site du
                         lycée Maupertuis</a>
                 </div>
-                <div>
-                    <img class="size-img-home-article" src="./img/home/maupertuisMaps.png" alt="maps-lycee-maupertuis">
-                    <address>1 Rue Pierre de Coubertin, 35400 SAINT-MALO</address>
+                <div class="school-address">
+                    <img class="size-img-home-article" src="./img/home/maupertuisMaps.png"
+                        alt="vue-carte-maps-du-lycee-maupertuis">
+                    <a
+                        href="https://www.google.fr/maps/place/Lyc%C3%A9e+Maupertuis+-+Enseignement+G%C3%A9n%C3%A9ral,+Technologique+et+Professionnel/@48.6405228,-2.008971,17z/data=!3m2!4b1!5s0x480e81429591a2b1:0x6189a6c1d9f67ff0!4m5!3m4!1s0x480e8142eb14e883:0x8c4421b2ce0283ce!8m2!3d48.6405193!4d-2.0067823">
+                        <address>1 Rue Pierre de Coubertin, 35400 SAINT-MALO</address>
+                    </a>
                 </div>
             </article>
         </section>

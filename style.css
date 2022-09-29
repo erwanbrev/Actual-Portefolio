@@ -56,6 +56,7 @@ header,
 .title-second-home,
 .news-container,
 .body a,
+.school-address a,
 .content-split,
 .design-ext-link:hover,
 aside a:hover,
@@ -127,6 +128,11 @@ footer,
 #click-menu-footer,
 #info-footer {
     flex-direction: column;
+}
+
+/* effacement visuel du menu-burger utilisé dans le cas de la version mobile */
+.click-menu-burger {
+    display: none;
 }
 
 .click-menu {
@@ -295,12 +301,30 @@ footer {
     margin: 0;
 }
 
+/* creation de la responsive mobile (500px)  */
+
 @media screen and (max-width: 500px) {
+
+    header {
+        flex-direction: row-reverse;
+    }
+
+    .click-menu {
+        display: none;
+    }
+
+    .click-menu-burger {
+        display: block;
+    }
 
     /* reglage du titre principal */
     .title-main-home {
-        font-size: 2em;
-        padding: 3%;
+        font-size: 2.2em;
+        padding: 6%;
+    }
+
+    #title-second-home-mobile {
+        margin: 6% auto;
     }
 
     .present-article div:first-child,
@@ -310,13 +334,14 @@ footer {
 
     /* definition d'une position fixe et d'une taille de photo de profil */
     #profile-picture {
-        width: 36%;
+        width: 14em;
+        margin: 3% auto 6% auto;
     }
 
     /* separateur annoncant une thématique */
     .content-split {
-        height: 20vh;
-        font-size: 1.4em;
+        height: auto;
+        font-size: 1.5em;
         padding: 6%;
         text-align: center;
     }
@@ -331,12 +356,12 @@ footer {
     }
 
     .size-img-home-article {
-        width: 30em;
+        width: 28em;
     }
 
     /* reglage du pied de page */
     footer {
-        height: 56vh;
+        height: 52vh;
     }
 
     #content-footer {
@@ -344,4 +369,50 @@ footer {
         align-items: center;
     }
 
+}
+
+/* creation de la responsive ordinateur (1920px)  */
+
+
+@media screen and (min-width: 1920px) {
+
+    .click-menu {
+        width: 20vw;
+        font-size: 1.4em;
+    }
+
+    /* reglage du titre principal */
+    .title-main-home {
+        font-size: 3.4em;
+    }
+
+    .title-second-home {
+        font-size: 1.8em;
+    }
+
+    /* definition d'une position fixe et d'une taille de photo de profil */
+    #profile-picture {
+        width: 20em;
+    }
+
+    .news-container p,
+    .content-present-article p,
+    .school-article p,
+    .design-ext-link {
+        font-size: 1.2em;
+    }
+
+    /* separateur annoncant une thématique */
+    .content-split {
+        font-size: 2.2em;
+    }
+
+    .size-img-home-article {
+        width: 50em;
+    }
+
+    /* reglage du pied de page */
+    footer {
+        height: 40vh;
+    }
 }
