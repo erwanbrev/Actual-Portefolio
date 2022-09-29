@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description permettant d'avoir des informations sur le site visité sans avoir encore cliqué sur le lien, suite à la recherche sur un navigateur -->
+    <meta name="description"
+        content="Le portefolio d'Erwan Brévault est l'endroit où vous pourrez retrouver des informations sur sa vie scolaire ainsi que des projets web.">
+    <!-- ajout d'une typographie -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ajout d'une favicon -->
+    <link rel="shortcut icon" href="./img/icones/favicon-color.ico" type="image/x-icon">
+    <!-- lien d'un fichier CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Portefolio d'Erwan Brévault - Développement Web</title>
+</head>
+
+<!-- checkCookie() va afficher le bandeau de cookie si non accepté-->
+
+<body onload="checkCookie()">
+    <!-- en-tête -->
+    <header>
+        <div>
+            <a href="./index.html"><img src="./img/icones/logo-96x96.png" alt="logo-du-développeur" id="logo"></a>
+        </div>
+        <nav class="click-menu">
+            <ul>
+                <li><a href="./pages/front.html">Front-End</a></li>
+                <li><a href="./pages/contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- contenu du site -->
+    <main>
+        <h1 class="title-main-home" itemscope itemtype="https://schema.org/Person" itemprop="name">Portefolio d'Erwan
+            Brévault</h1>
+        <!-- article concernant mon profil -->
+        <article class="news-container">
+            <section class="latest-news">
+                <h2 class="title-second-home">Actualité Front-End</h2>
+                <p>Actuellement étudiant en <strong>Développement Web Front-End</strong>, je m'intéresse au métier de
+                    développeur et aux
+                    actualités informatiques, crypto-monnaies, nouveautés en tout genre... </p>
+                <p> Je suis actuellement en train
+                    d'améliorer mes compétences en <strong>HTML, CSS</strong> mais surtout <strong>Javascript</strong>.
+                </p>
+                <p>
+                    <a target="_blank" class="design-ext-link" href="https://www.figma.com/">FIGMA</a>
+                    et <a target="_blank" class="design-ext-link" href="https://code.visualstudio.com/">VSCode</a> sont
+                    mes deux outils
+                    préférés pour créer un
+                    site !
+                </p>
+            </section>
+            <img src="./img/home/profile-pic.jpg" alt="photo-de-profil-erwan-brevault" id="profile-picture">
+        </article>
+        <!-- separateur annoncant le theme suivant -->
+        <section class="content-split">
+            <h3>Où est-ce que je suis ma formation actuelle ?</h3>
+        </section>
+        <section class="present-article">
+            <!-- article concernant l'IMTS -->
+            <article class="content-present-article">
+                <div itemscope itemtype="https://schema.org/Organization">
+                    <h2 class="title-second-home" itemprop="name">Institut Marie-Thérèse Solacroup</h2>
+                    <br>
+                    <p>Je passe prochainement l'examen oral pour obtenir la <strong>certification développeur web et web
+                            mobile
+                            Front-End</strong>, qui elle, a eu la durée d'un an.</p>
+                    <p> Lors de la rentrée suivante, je vais pouvoir commencer la <strong>certification développeur
+                            Back-End</strong> et ainsi travailler pour avoir la <strong>mention FullStack</strong>.
+                    </p>
+                    <a class="design-ext-link" href="https://www.institutsolacroup.com/" target="_blank">Voir le
+                        site de l'IMTS</a>
+                </div>
+                <div>
+                    <img class="size-img-home-article" src="./img/home/imtsMaps.png" alt="maps-IMTS">
+                    <address>4 Avenue du Château Hébert, 35800 DINARD</address>
+                </div>
+            </article>
+            <!-- separateur annoncant le theme suivant -->
+        </section>
+        <section class="content-split">
+            <h3>Dans quels lycées aies-je effectué ma scolarité ?</h3>
+        </section>
+        <section class="school-article">
+            <!-- article concernant La Providence -->
+            <article class="content-article">
+                <div itemscope itemtype="https://schema.org/Organization">
+                    <h2 class="title-second-home" itemprop="name">Lycée La Providence</h2>
+                    <br>
+                    <p>Mes années d'études se sont déroulées de 2015 à 2018 et ainsi obtenir le <strong>BAC
+                            Professionnel
+                            Systèmes Électroniques Numériques</strong> option Électroniques Industrielles Embarquées.
+                    </p>
+                    <a class="design-ext-link" href="https://www.ism-lapro.fr/" target="_blank">Voir le site du lycée La
+                        Providence</a>
+                </div>
+                <div>
+                    <img class="size-img-home-article" src="./img/home/laproMaps.png" alt="maps-lycee-la-providence">
+                    <address>27 Rue de Toulouse, 35400 SAINT-MALO</address>
+                </div>
+            </article>
+            <!-- article concernant Maupertuis -->
+            <article class="content-article">
+                <div>
+                    <h2 class="title-second-home">Lycée Maupertuis</h2>
+                    <br>
+                    <p>J'ai obtenu le <strong>BTS Systèmes Numériques</strong> option Informatique et Réseaux après
+                        avoir passé 3 ans au
+                        sein de ce lycée, de 2019 à 2021.</p>
+                    <a class="design-ext-link" href="https://www.lyceemaupertuis.bzh/" target="_blank">Voir le site du
+                        lycée Maupertuis</a>
+                </div>
+                <div>
+                    <img class="size-img-home-article" src="./img/home/maupertuisMaps.png" alt="maps-lycee-maupertuis">
+                    <address>1 Rue Pierre de Coubertin, 35400 SAINT-MALO</address>
+                </div>
+            </article>
+        </section>
+        <!-- affichage du bandeau de cookie -->
+        <!-- <section id="cookie-law"></section> -->
+    </main>
+    <!-- inclusion de javascript pour l'utilisation de cookie et le bouton burger version mobile et tablette -->
+    <script src="./script.js"></script>
+    <!-- pied de page -->
+    <footer>
+        <div>
+            <a href="./index.html"><img src="./img/icones/logo-color-96x96.png" alt="logo-du-développeur" id="logo"></a>
+        </div>
+        <section id="content-footer">
+            <div id="click-menu-footer">
+                <h4 class="line-height-footer-left">Visiter les pages</h4>
+                <ul>
+                    <li><a href="./pages/front.html">Front-End</a></li>
+                    <li><a href="./pages/contact.html">Me contacter</a></li>
+                </ul>
+            </div>
+            <div id="info-footer">
+                <h4 class="line-height-footer-right">© Erwan Brévault</h4>
+                <a href="./pages/legal.html" class="legal">Mentions Légales</a>
+                <a href="./pages/privacy.html" class="privacy">Politique de Confidentialité</a>
+                <div>
+                    <a href="https://github.com/erwanbrev" target="_blank"><img src="./img/icones/icons8-github-48.svg"
+                            alt="icone-github-svg"></a>
+                    <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img
+                            src="./img/icones/icons8-linkedin.svg" alt="icone-linkedin-svg"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

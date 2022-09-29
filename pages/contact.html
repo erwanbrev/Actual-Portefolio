@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/icones/icons8-objectif-16.png" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../design/contact.css">
+    <title>Contact par formulaire ou via mes coordonnées - Erwan Brévault</title>
+</head>
+
+<!-- checkCookie() va afficher le bandeau de cookie si non accepté-->
+
+<body onload="checkCookie()">
+    <!-- en-tête -->
+    <header>
+        <div>
+            <a href="../index.html" id="logo">EB</a>
+        </div>
+        <nav class="click-menu">
+            <a href="./front.html">Front-End</a>
+            <!-- <a href="./pages/back.html">Back-End</a> -->
+            <a href="./contact.html">Me contacter</a>
+        </nav>
+    </header>
+    <!-- contenu du site -->
+    <main>
+        <h1 class="title-main-home">Me contacter ? C'est ici !</h1>
+        <section class="formulaire">
+            <form action="mailto:devbzh35@gmail.com" method="POST">
+                <label>E-mail</label>
+                <input type="email" name="mel" placeholder="durand.durant@gmail.com">
+                <label>Téléphone</label>
+                <input type="number" name="nb" placeholder="06.xx.xx.xx.xx">
+                <label>Saisir votre demande</label>
+                <textarea name="text" cols="10" rows="5" placeholder="Je souhaite vous contacter pour ..."></textarea>
+                <input type="button" value="Valider" id="btn-form">
+            </form>
+            <aside>
+                <h2 class="title-second-home">Par mail :</h2>
+                <a href="mailto:devbzh35@gmail.com">devbzh35@gmail.com</a>
+                <h2 class="title-second-home">Par téléphone :</h2>
+                <p class="numero-tel">06.82.99.56.83</p>
+                <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img
+                        src="../img/icones/icons8-linkedin.svg" alt="icone-linkedin-svg"></a>
+            </aside>
+        </section>
+    </main>
+    <script src="../script.js"></script>
+    <!-- pied de page -->
+    <footer>
+        <div>
+            <h3 id="logo-footer">EB</h3>
+        </div>
+        <section id="content-footer">
+            <div id="click-menu-footer">
+                <h4 class="line-height-footer-left">Visiter les pages</h4>
+                <a href="./front.html">Front-End</a>
+                <!-- <a href="./pages/back.html">Back-End</a> -->
+                <a href="./contact.html">Me contacter</a>
+                </br>
+                <h4 class="line-height-footer-left">Utilisation</h4>
+                <a target="_blank" href="https://icons8.com">Icons by Icons8</a>
+            </div>
+            <div id="info-footer">
+                <h4 class="line-height-footer-right">© Erwan Brévault</h4>
+                <a href="./legal.html" class="legal">Mentions Légales</a>
+                <a href="./privacy.html" class="privacy">Politique de Confidentialité</a>
+                <a href="mailto:devbzh35@gmail.com">devbzh35@gmail.com</a>
+                <div>
+                    <a href="https://github.com/erwanbrev" target="_blank"><img src="../img/icones/icons8-github-48.svg"
+                            alt="icone-github-svg"></a>
+                    <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img
+                            src="../img/icones/icons8-linkedin.svg" alt="icone-linkedin-svg"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+        /* paste this line in verbatim */
+        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+        /* customize formbutton below*/
+        formbutton("create", {
+            action: "https://formspree.io/f/xgedewzz",
+            title: "How can we help?",
+            fields: [
+                {
+                    type: "email",
+                    label: "Email:",
+                    name: "email",
+                    required: true,
+                    placeholder: "your@email.com"
+                },
+                {
+                    type: "textarea",
+                    label: "Message:",
+                    name: "message",
+                    placeholder: "What's on your mind?",
+                },
+                { type: "submit" }
+            ],
+            styles: {
+                title: {
+                    backgroundColor: "gray"
+                },
+                button: {
+                    backgroundColor: "gray"
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+/* couleurs prédéfinies dès que le fichier style.css est appelé */
+:root {
+    /* arriere-plan mode sombre */
+    --bg-black: #0F0F0F;
+    /* arriere-plan de base */
+    --bg-white: #FAFAFA;
+    /* arriere-plan beige */
+    --bg-beige: #D39E72;
+    /* arriere-plan beige foncé */
+    --bg-beige-deep: #A07959;
+    /* textes */
+    --black-text: #1F1F1F;
+    --white-text: #F2F2F2;
+}
+
+/* design pour MAC OS X 1440 / 680 */
+
+/* eviter la redondance pour display : flex */
+header,
+.click-menu ul,
+.title-main-home,
+.title-second-home,
+.present-article,
+.news-container,
+.size-img-home-article,
+.content-split,
+.content-article,
+aside,
+#content-footer,
+#info-footer,
+#click-menu-footer,
+footer,
+#cookie-law p {
+    display: flex;
+}
+
+header,
+footer {
+    width: 100vw;
+    align-items: center;
+}
+
+/* couleur de la typographie qui n'est pas sur fond clair */
+header,
+.click-menu a,
+.title-main-home,
+.title-second-home,
+.news-container,
+.body a,
+.content-split,
+.design-ext-link:hover,
+aside a:hover,
+#content-footer a:hover,
+#cookie-law p {
+    color: var(--black-text);
+}
+
+body,
+header,
+#cookie-law {
+    background-color: var(--bg-white);
+}
+
+
+header a:hover,
+.design-ext-link,
+aside a,
+.numero-tel {
+    color: var(--bg-beige-deep);
+}
+
+#logo-footer,
+#click-menu-footer a,
+#info-footer,
+#info-footer a,
+.legal,
+.privacy,
+footer {
+    color: var(--white-text);
+}
+
+header,
+.click-menu ul,
+.present-article,
+.news-container,
+#cookie-law {
+    flex-direction: row;
+}
+
+/* reglage de l'en-tête */
+header {
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    transition: .2s;
+    justify-content: space-between;
+    padding: 2%;
+    box-shadow: 0 0 4px 4px var(--bg-beige-deep);
+}
+
+.around-img,
+form,
+aside {
+    box-shadow: 0 0 1.2em var(--bg-beige-deep);
+    border-radius: 12px;
+}
+
+.title-main-home,
+.content-split,
+footer {
+    background: linear-gradient(to left, var(--bg-beige-deep), var(--bg-beige));
+}
+
+.content-article,
+footer,
+#click-menu-footer,
+#info-footer {
+    flex-direction: column;
+}
+
+.click-menu {
+    width: 24vw;
+}
+
+.click-menu ul {
+    justify-content: space-evenly;
+}
+
+.click-menu a:hover {
+    text-decoration: underline;
+    text-underline-offset: .6em;
+}
+
+ul {
+    list-style: none;
+}
+
+#logo {
+    margin-top: 9%;
+    width: 70px;
+    height: auto;
+}
+
+/* reglage du corps du site ( contenus principaux ) */
+body {
+    margin-top: 12vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+body a {
+    text-decoration: none;
+}
+
+/* reglage du titre principal */
+.title-main-home {
+    font-size: 2.4em;
+    padding: 3%;
+}
+
+/* reglage du titre secondaire */
+.title-second-home {
+    font-size: 1.4em;
+    margin-bottom: 2%;
+}
+
+.title-main-home,
+.content-split {
+    justify-content: center;
+}
+
+/* contenu concernant des informations sur moi */
+.news-container {
+    max-width: 100vw;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+}
+
+.latest-news {
+    width: 70vw;
+    height: 100%;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+/* definition d'une position fixe et d'une taille de photo de profil */
+#profile-picture {
+    margin: 1.4% auto;
+    width: 18%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* separateur annoncant une thématique */
+.content-split {
+    height: 20vh;
+    font-size: 1.8em;
+    padding: 3%;
+}
+
+.present-article {
+    justify-content: center;
+}
+
+.school-article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.content-present-article {
+    padding: 2%;
+}
+
+.content-article {
+    border: 0.5px solid var(--bg-beige);
+    padding: 4%;
+}
+
+.present-article,
+.content-article {
+    text-align: justify;
+}
+
+/* definition de la taille d'une image sur la page d'accueil */
+.size-img-home-article {
+    margin: 5vh auto;
+    width: 38em;
+    height: auto;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+
+/* reglage du pied de page */
+footer {
+    height: 48vh;
+}
+
+#logo-footer {
+    font-weight: 700;
+    font-size: 2.2em;
+    margin: 10% auto 50% auto;
+}
+
+#content-footer {
+    width: 50vw;
+    justify-content: space-between;
+    line-height: 5vh;
+}
+
+.line-height-footer-left {
+    margin-bottom: 10%;
+}
+
+.line-height-footer-right {
+    margin-bottom: 6%;
+}
+
+/* creation du bandeau de cookie avec CSS & JS */
+#cookie-law {
+    height: 12vh;
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    transition: .2s;
+    justify-content: space-between;
+    padding: 2%;
+    border-top: 1px solid var(--bg-beige-deep);
+}
+
+#cookie-law p {
+    justify-content: center;
+    padding: 3%;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+
+    /* reglage du titre principal */
+    .title-main-home {
+        font-size: 2em;
+        padding: 3%;
+    }
+
+    .present-article div:first-child,
+    .school-article div:first-child {
+        padding: 4%;
+    }
+
+    /* definition d'une position fixe et d'une taille de photo de profil */
+    #profile-picture {
+        width: 36%;
+    }
+
+    /* separateur annoncant une thématique */
+    .content-split {
+        height: 20vh;
+        font-size: 1.4em;
+        padding: 6%;
+        text-align: center;
+    }
+
+    .news-container {
+        flex-direction: column;
+    }
+
+    .school-article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .size-img-home-article {
+        width: 30em;
+    }
+
+    /* reglage du pied de page */
+    footer {
+        height: 56vh;
+    }
+
+    #content-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
