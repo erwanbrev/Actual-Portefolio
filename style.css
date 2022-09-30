@@ -61,7 +61,8 @@ header,
 .design-ext-link:hover,
 aside a:hover,
 #content-footer a:hover,
-#cookie-law p {
+#cookie-law p,
+.numero-tel {
     color: var(--black-text);
 }
 
@@ -74,8 +75,7 @@ header,
 
 header a:hover,
 .design-ext-link,
-aside a,
-.numero-tel {
+aside a {
     color: var(--bg-beige-deep);
 }
 
@@ -108,13 +108,6 @@ header {
     justify-content: space-between;
     padding: 2%;
     box-shadow: 0 0 4px 4px var(--bg-beige-deep);
-}
-
-.around-img,
-form,
-aside {
-    box-shadow: 0 0 1.2em var(--bg-beige-deep);
-    border-radius: 12px;
 }
 
 .title-main-home,

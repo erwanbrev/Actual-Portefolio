@@ -2,14 +2,16 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vous pouvez contacter Erwan Brévault par cette page, regroupant diverses possibilités notammment un formulaire de contact.">
+    <!-- ajout d'une typographie -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../img/icones/icons8-objectif-16.png" />
+    <!-- ajout d'une favicon -->
+    <link rel="shortcut icon" href="../img/icones/favicon-color.ico" type="image/x-icon">
+    <!-- lien d'un fichier CSS -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../design/contact.css">
-    <title>Contact par formulaire ou via mes coordonnées - Erwan Brévault</title>
+    <title>Pour contacter Erwan Brévault - Développement Web</title>
 </head>
 
 <!-- checkCookie() va afficher le bandeau de cookie si non accepté-->
@@ -18,12 +20,20 @@
     <!-- en-tête -->
     <header>
         <div>
-            <a href="../index.html" id="logo">EB</a>
+            <a href="../index.html"><img src="../img/icones/logo-96x96.png" alt="logo-du-développeur" id="logo"></a>
         </div>
         <nav class="click-menu">
-            <a href="./front.html">Front-End</a>
-            <!-- <a href="./pages/back.html">Back-End</a> -->
-            <a href="./contact.html">Me contacter</a>
+            <ul>
+                <li><a href="../pages/front.html">Front-End</a></li>
+                <li><a href="../pages/contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+        <!-- menu burger -->
+        <nav class="click-menu-burger">
+            <ul>
+                <li><a href="../pages/front.html">Front-End</a></li>
+                <li><a href="../pages/contact.html">Me contacter</a></li>
+            </ul>
         </nav>
     </header>
     <!-- contenu du site -->
@@ -40,12 +50,14 @@
                 <input type="button" value="Valider" id="btn-form">
             </form>
             <aside>
-                <h2 class="title-second-home">Par mail :</h2>
-                <a href="mailto:devbzh35@gmail.com">devbzh35@gmail.com</a>
                 <h2 class="title-second-home">Par téléphone :</h2>
                 <p class="numero-tel">06.82.99.56.83</p>
-                <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img
-                        src="../img/icones/icons8-linkedin.svg" alt="icone-linkedin-svg"></a>
+                <div>
+                    <a href="https://github.com/erwanbrev" target="_blank"><img src="../img/icones/icons8-github-48.svg"
+                            alt="icone-github-svg"></a>
+                    <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img
+                            src="../img/icones/icons8-linkedin.svg" alt="icone-linkedin-svg"></a>
+                </div>
             </aside>
         </section>
     </main>
@@ -53,31 +65,29 @@
     <!-- pied de page -->
     <footer>
         <div>
-            <h3 id="logo-footer">EB</h3>
+            <a href="./index.html"><img src="../img/icones/logo-color-96x96.png" alt="logo-du-développeur"
+                    id="logo-footer"></a>
         </div>
         <section id="content-footer">
             <div id="click-menu-footer">
                 <h4 class="line-height-footer-left">Visiter les pages</h4>
-                <a href="./front.html">Front-End</a>
-                <!-- <a href="./pages/back.html">Back-End</a> -->
-                <a href="./contact.html">Me contacter</a>
-                </br>
-                <h4 class="line-height-footer-left">Utilisation</h4>
-                <a target="_blank" href="https://icons8.com">Icons by Icons8</a>
+                <ul>
+                    <li><a href="../pages/front.html">Front-End</a></li>
+                    <li><a href="../pages/contact.html">Me contacter</a></li>
+                </ul>
             </div>
             <div id="info-footer">
                 <h4 class="line-height-footer-right">© Erwan Brévault</h4>
-                <a href="./legal.html" class="legal">Mentions Légales</a>
-                <a href="./privacy.html" class="privacy">Politique de Confidentialité</a>
-                <a href="mailto:devbzh35@gmail.com">devbzh35@gmail.com</a>
-                <div>
-                    <a href="https://github.com/erwanbrev" target="_blank"><img src="../img/icones/icons8-github-48.svg"
-                            alt="icone-github-svg"></a>
-                    <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img
-                            src="../img/icones/icons8-linkedin.svg" alt="icone-linkedin-svg"></a>
-                </div>
+                <a href="../pages/legal.html" class="legal">Mentions Légales</a>
+                <a href="../pages/privacy.html" class="privacy">Politique de Confidentialité</a>
             </div>
         </section>
+        <div>
+            <a href="https://github.com/erwanbrev" target="_blank"><img src="../img/icones/icons8-github-48.svg"
+                    alt="icone-github-svg"></a>
+            <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img src="../img/icones/icons8-linkedin.svg"
+                    alt="icone-linkedin-svg"></a>
+        </div>
     </footer>
     <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
