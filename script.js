@@ -60,3 +60,35 @@ function removeMe() {
     var element = document.getElementById('cookie-law');
     element.parentNode.removeChild(element);
 }
+
+// formulaire avec formspree
+window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+/* customize formbutton below*/
+formbutton("create", {
+    action: "https://formspree.io/f/xgedewzz",
+    title: "Puis-je vous aider ?",
+    fields: [
+        {
+            type: "email",
+            label: "Email:",
+            name: "email",
+            required: true,
+            placeholder: "votre@email.com"
+        },
+        {
+            type: "textarea",
+            label: "Message:",
+            name: "message",
+            placeholder: "Quel est votre message ?",
+        },
+        { type: "submit" }
+    ],
+    styles: {
+        title: {
+            backgroundColor: "black"
+        },
+        button: {
+            backgroundColor: "black"
+        }
+    }
+});

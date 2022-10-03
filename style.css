@@ -34,12 +34,19 @@ header,
 .size-img-home-article,
 .content-split,
 .content-article,
-aside,
 #content-footer,
 #info-footer,
 #click-menu-footer,
 footer,
-#cookie-law p {
+#cookie-law p,
+/* classes contact.css */
+.formulaire,
+form,
+label,
+aside,
+aside div,
+/* classes legal.css */
+.legal-case {
     display: flex;
 }
 
@@ -50,10 +57,12 @@ footer {
 }
 
 /* couleur de la typographie qui n'est pas sur fond clair */
+body,
 header,
 .click-menu a,
 .title-main-home,
 .title-second-home,
+.title-aside,
 .news-container,
 .body a,
 .school-address a,
@@ -61,8 +70,7 @@ header,
 .design-ext-link:hover,
 aside a:hover,
 #content-footer a:hover,
-#cookie-law p,
-.numero-tel {
+#cookie-law p {
     color: var(--black-text);
 }
 
@@ -83,6 +91,7 @@ aside a {
 #click-menu-footer a,
 #info-footer,
 #info-footer a,
+.numero-tel,
 .legal,
 .privacy,
 footer {
@@ -128,6 +137,15 @@ footer,
     width: 70px;
 }
 
+/* definition d'une ombre autour des cadres principaux */
+.size-img-home-article,
+form,
+aside {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 10%),
+        -3px -3px 3px rgb(0 0 0 / 10%);
+}
+
 /* effacement visuel du menu-burger utilisé dans le cas de la version mobile */
 .click-menu-burger {
     display: none;
@@ -135,6 +153,7 @@ footer,
 
 .click-menu {
     width: 24vw;
+    font-size: 1em;
 }
 
 .click-menu ul {
@@ -173,7 +192,8 @@ body a {
 }
 
 /* reglage du titre secondaire */
-.title-second-home {
+.title-second-home,
+.title-aside {
     font-size: 1.4em;
     margin-bottom: 2%;
 }
@@ -248,7 +268,7 @@ body a {
     margin: 5vh auto;
     width: 38em;
     height: auto;
-    border-radius: 12px;
+    border-radius: 2em;
     justify-content: center;
 }
 
@@ -363,7 +383,8 @@ footer {
 
     /* reglage du pied de page */
     footer {
-        height: 42vh;
+        height: 40vh;
+        font-size: 1em;
     }
 
     #content-footer {
@@ -373,9 +394,9 @@ footer {
 }
 
 
-/* creation de la responsive mobile (500px)  */
+/* creation de la responsive inferieur a un grand ecran (px)  */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
     .school-article {
         display: flex;
@@ -393,7 +414,7 @@ footer {
 /* creation de la responsive ordinateur (1920px)  */
 
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1920px) {
 
     .click-menu {
         width: 20vw;
@@ -402,11 +423,12 @@ footer {
 
     /* reglage du titre principal */
     .title-main-home {
-        font-size: 3.4em;
+        font-size: 3em;
     }
 
-    .title-second-home {
-        font-size: 1.8em;
+    .title-second-home,
+    .content-split {
+        font-size: 2em;
     }
 
     /* definition d'une position fixe et d'une taille de photo de profil */
@@ -421,9 +443,9 @@ footer {
         font-size: 1.2em;
     }
 
-    /* separateur annoncant une thématique */
-    .content-split {
-        font-size: 2.2em;
+    /* descente du logo présent à droite du langage appris */
+    .latest-news img {
+        margin-bottom: -1.6vh;
     }
 
     .size-img-home-article {
@@ -433,5 +455,6 @@ footer {
     /* reglage du pied de page */
     footer {
         height: 40vh;
+        font-size: 1.2em;
     }
 }

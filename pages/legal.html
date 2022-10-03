@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/icones/icons8-objectif-16.png" />
     <link rel="stylesheet" href="../style.css">
-    <title>Page de contact</title>
+    <link rel="stylesheet" href="../design/legal.css">
+    <title>Mentions Légales du Portefolio d'Erwan Brévault</title>
 </head>
 
 <!-- checkCookie() va afficher le bandeau de cookie si non accepté-->
@@ -17,50 +18,84 @@
     <!-- en-tête -->
     <header>
         <div>
-            <a href="../index.html" id="logo">EB</a>
+            <a href="../index.html"><img src="../img/icones/logo-96x96.png" alt="logo-du-développeur" id="logo"></a>
         </div>
         <nav class="click-menu">
-            <a href="./front.html">Front-End</a>
-            <!-- <a href="./pages/back.html">Back-End</a> -->
-            <a href="./contact.html">Me contacter</a>
+            <ul>
+                <li><a href="../pages/front.html">Front-End</a></li>
+                <li><a href="../pages/contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+        <!-- menu burger -->
+        <nav class="click-menu-burger">
+            <ul>
+                <li><a href="../pages/front.html">Front-End</a></li>
+                <li><a href="../pages/contact.html">Me contacter</a></li>
+            </ul>
         </nav>
     </header>
     <!-- contenu du site -->
     <main>
-        <h1 class="title-main-home">Portefolio d'Erwan Brévault</h1>
-        <form action="POST">
-            <input type="email" name="mel" id="">
-        </form>
+        <h1 class="title-main-home">Mentions Légales</h1>
+        <section class="legal-case" itemscope>
+            <h2>Propriétaire et créateur</h2>
+            <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie
+                numérique, il est précisé aux utilisateurs du site www.erwan.brevault.fr l'identité des différents
+                intervenants dans le cadre de sa réalisation et de son suivi :</p>
+            <p itemtype="https://schema.org/Person"><strong itemprop="name"> Erwan Brévault</strong></p>
+            <address>2 Allée Max Leban, 35400 Saint-Malo, France</address>
+            <h2>Hébergeur internet</h2>
+            <p>OVH SAS au capital de 10 174 560 € </p>
+            <p>RCS Lille Métropole 424 761 419 00045</p>
+            <p>Code APE 2620Z N° TVA : FR 22 424 761 419</p>
+            <p>Siège social : 2 rue Kellermann - 59100 Roubaix - France</p>
+            <p>Président : Michel Paulin OVH SAS est une filiale de la société OVH Groupe SA, société immatriculée au
+                RCS
+                de Lille sous le numéro 537 407 926 sise 2</p>
+            <address>Rue Kellermann, 59100 Roubaix</address>
+            <h2>Licences</h2>
+            <p> <a href="https://icones8.fr/"> <strong>Icons8</strong> </a>pour les icônes de réseaux sociaux présentes
+                sur le site</p>
+            <p> <strong>Google Maps</strong> pour les captures d'écran de la page d'accueil</p>
+            <p></p>
+            <h2></h2>
+            <p></p>
+            <h2></h2>
+            <p></p>
+            <h2></h2>
+            <p></p>
+        </section>
     </main>
+    <!-- inclusion de javascript pour l'utilisation de cookie et le bouton burger version mobile et tablette -->
     <script src="../script.js"></script>
+    <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <!-- pied de page -->
     <footer>
         <div>
-            <h3 id="logo-footer">EB</h3>
+            <a href="./index.html"><img src="../img/icones/logo-color-96x96.png" alt="logo-du-développeur"
+                    id="logo-footer"></a>
         </div>
         <section id="content-footer">
             <div id="click-menu-footer">
                 <h4 class="line-height-footer-left">Visiter les pages</h4>
-                <a href="./front.html">Front-End</a>
-                <!-- <a href="./pages/back.html">Back-End</a> -->
-                <a href="./contact.html">Me contacter</a>
-                </br>
-                <h4 class="line-height-footer-left">Utilisation</h4>
-                <a target="_blank" href="https://icons8.com">Icons by Icons8</a>
+                <ul>
+                    <li><a href="../pages/front.html">Front-End</a></li>
+                    <li><a href="../pages/contact.html">Me contacter</a></li>
+                </ul>
             </div>
             <div id="info-footer">
                 <h4 class="line-height-footer-right">© Erwan Brévault</h4>
-                <a href="./legal.html" class="legal">Mentions Légales</a>
-                <a href="./privacy.html" class="privacy">Politique de Confidentialité</a>
-                <a href="mailto:devbzh35@gmail.com">devbzh35@gmail.com</a>
-                <div>
-                    <a href="https://github.com/erwanbrev" target="_blank"><img src="../img/icones/icons8-github-48.svg"
-                            alt="icone-github-svg"></a>
-                    <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img
-                            src="../img/icones/icons8-linkedin.svg" alt="icone-linkedin-svg"></a>
-                </div>
+                <a href="../pages/legal.html" class="legal">Mentions Légales</a>
+                <a href="../pages/privacy.html" class="privacy">Politique de Confidentialité</a>
             </div>
         </section>
+        <div>
+            <a href="https://github.com/erwanbrev" target="_blank"><img src="../img/icones/icons8-github-48.svg"
+                    alt="icone-github-svg"></a>
+            <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img
+                    src="../img/icones/icons8-linkedin.svg" alt="icone-linkedin-svg"></a>
+        </div>
     </footer>
 </body>
 

@@ -1,0 +1,21 @@
+.legal-case {
+    width: 60vw;
+    background-color: var(--bg-beige);
+    margin: 4% auto;
+    border-radius: 2em;
+    flex-direction: column;
+    padding: 1%;
+    text-align: justify;
+}
+
+strong {
+    font-weight: 300;
+}
+
+/* creation de la responsive mobile (500px)  */
+
+@media screen and (max-width: 500px) {
+    .legal-case {
+        width: 80vw;
+    }
+}
