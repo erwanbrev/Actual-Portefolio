@@ -114,6 +114,7 @@ aside {
 .title-aside {
     text-decoration: underline;
     text-underline-offset: .6em;
+    font-size: 1.2em;
 }
 
 /* creation de la responsive mobile (500px)  */
@@ -174,16 +175,17 @@ aside {
     }
 }
 
-/* creation de la responsive inferieur a un grand ecran (px)  */
+/* creation de la responsive inferieur a un ecran de mac (px)  */
 
-/* @media screen and (max-width: 1300px) {
+@media screen and (max-width: 1362px) {
     aside {
-        padding: 2%;
-        width: 17vw;
+        width: fit-content;
     }
-} */
 
-/* creation de la responsive ordinateur (1920px)  */
+    .title-aside {
+        font-size: 1.1em;
+    }
+}
 
 @media screen and (min-width: 1920px) {
 

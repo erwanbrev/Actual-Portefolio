@@ -121,7 +121,9 @@ header {
 
 .title-main-home,
 .content-split,
-footer {
+footer,
+/* lien legal.css */
+.legal-case {
     background: linear-gradient(to left, var(--bg-beige-deep), var(--bg-beige));
 }
 
@@ -393,10 +395,9 @@ footer {
 
 }
 
+/* creation de la responsive inferieur a un ecran de mac (px)  */
 
-/* creation de la responsive inferieur a un grand ecran (px)  */
-
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1362px) {
 
     .school-article {
         display: flex;
@@ -411,10 +412,10 @@ footer {
 
 }
 
-/* creation de la responsive ordinateur (1920px)  */
+/* creation de la responsive ordinateur à partir de 1600px  */
 
 
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1500px) {
 
     .click-menu {
         width: 20vw;
@@ -439,7 +440,9 @@ footer {
     .news-container p,
     .content-present-article p,
     .school-article p,
-    .design-ext-link {
+    .design-ext-link,
+    /* lien avec contact.css */
+    .title-aside {
         font-size: 1.2em;
     }
 
