@@ -39,6 +39,7 @@ header,
 #click-menu-footer,
 footer,
 #cookie-law p,
+.school-article,
 /* classes contact.css */
 .formulaire,
 form,
@@ -191,6 +192,8 @@ body a {
 .title-main-home {
     font-size: 2.4em;
     padding: 3%;
+    /* clip-path donne une forme  */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
 }
 
 /* reglage du titre secondaire */
@@ -236,6 +239,14 @@ body a {
 .content-split {
     height: 20vh;
     font-size: 1.8em;
+    /* clip-path donne une forme  */
+    clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 78%);
+}
+
+#school-split {
+    height: 90vh;
+    width: 0;
+    border-left: 1px solid var(--bg-beige-deep);
 }
 
 .present-article {
@@ -243,9 +254,7 @@ body a {
 }
 
 .school-article {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    flex-direction: row;
     height: auto;
     width: 100vw;
     max-width: 100vw;
@@ -256,7 +265,6 @@ body a {
 }
 
 .content-article {
-    border: 0.5px solid var(--bg-beige);
     padding: 4%;
 }
 
@@ -362,6 +370,13 @@ footer {
     .content-split {
         font-size: 1.4em;
         text-align: center;
+    }
+
+    #school-split {
+        height: 2vh;
+        width: 90vw;
+        /* border-bottom: 1px solid var(--bg-beige-deep); */
+        background-color: #0F0F0F;
     }
 
     .news-container {
