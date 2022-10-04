@@ -2,8 +2,12 @@
 <html lang="fr">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description permettant d'avoir des informations sur le site visité sans avoir encore cliqué sur le lien, suite à la recherche sur un navigateur -->
     <meta name="description"
-        content="Vous pouvez contacter Erwan Brévault par cette page, regroupant diverses possibilités notammment un formulaire de contact.">
+        content="Vous pouvez contacter Erwan Brévault par cette page, via des formulaires de contact ou encore à l'aide des coordonnées ci-joint.">
     <!-- ajout d'une typographie -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     <!-- ajout d'une favicon -->
@@ -22,17 +26,28 @@
         <div>
             <a href="../index.html"><img src="../img/icones/logo-96x96.png" alt="logo-du-développeur" id="logo"></a>
         </div>
-        <nav class="click-menu">
+        <nav class="click-btn">
             <ul>
-                <li><a href="../pages/front.html">Front-End</a></li>
-                <li><a href="../pages/contact.html">Me contacter</a></li>
+                <li><a href="./front.html">Front-End</a></li>
+                <li><a href="./contact.html">Me contacter</a></li>
             </ul>
         </nav>
         <!-- menu burger -->
-        <nav class="click-menu-burger">
-            <ul>
-                <li><a href="../pages/front.html">Front-End</a></li>
-                <li><a href="../pages/contact.html">Me contacter</a></li>
+        <div class="click-btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-burger-nav ">
+            <ul class="menu-burger-ul">
+                <div>
+                    <li><a href="./front.html">Front-End</a></li>
+                    <li><a href="./pages/contact.html">Me contacter</a></li>
+                </div>
+                <div>
+                    <li><a href="./legal.html">Mentions Légales</a></li>
+                    <li><a href="./privacy.html">Policy Privacy</a></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -40,19 +55,30 @@
     <main>
         <h1 class="title-main-home">Me contacter</h1>
         <section class="formulaire">
-            <form action="mailto:devbzh35@gmail.com" method="POST">
+            <form action="https://formspree.io/f/xgedewzz" method="POST">
                 <label>E-mail</label>
-                <input type="email" name="mel" placeholder="durand.durant@gmail.com">
+                <input type="email" name="mel" maxlength="30" placeholder="default@exemple.com" list="defaultEmails"
+                    required>
+                <datalist id="defaultEmails">
+                    <option value="@gmail.com">
+                    <option value="@orange.fr">
+                    <option value="@icloud.com"></option>
+                    <option value="@outlook.fr">
+                    <option value="@yahoo.com">
+                    <option value="@protonmail.com">
+                </datalist>
                 <label>Téléphone</label>
-                <input type="tel" name="nb" placeholder="06.xx.xx.xx.xx">
+                <input type=" tel" name="phone" maxlength="10" placeholder="0687406078" title="0687406078"
+                    pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required>
                 <label>Saisir votre demande</label>
-                <textarea name="text" cols="10" rows="5"
-                    placeholder="Je souhaite vous contacter au sujet de ..."></textarea>
+                <!-- longueur max de caracteres defini à 750 par choix de la taille de textarea en grand ecran -->
+                <textarea name="text" cols="10" rows="5" maxlength="750"
+                    placeholder="Je souhaite vous contacter au sujet de ..." required></textarea>
                 <button type="submit" value="Valider" id="btn-form">Valider</button>
             </form>
             <aside>
                 <h2 class="title-aside">Téléphone</h2>
-                <p class="numero-tel">06.82.99.56.83</p>
+                <p class="numero-tel">06 82 99 56 83</p>
                 <h2 class="title-aside">Réseaux sociaux</h2>
                 <div class="social-icon">
                     <a href="https://github.com/erwanbrev" target="_blank"><img src="../img/icones/icons8-github-48.svg"

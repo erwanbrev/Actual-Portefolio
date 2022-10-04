@@ -7,7 +7,8 @@ aside div {
 
 form,
 aside,
-#btn-form {
+#btn-form,
+#btn-form:active:after {
     border-radius: 2em;
 }
 
@@ -32,6 +33,11 @@ textarea::placeholder {
     font-size: 1.2em;
 }
 
+label,
+#btn-form {
+    font-weight: 700;
+}
+
 .formulaire {
     justify-content: space-around;
 }
@@ -47,15 +53,10 @@ input {
     border-radius: .8em;
 }
 
-label,
-#btn-form {
-    font-weight: 700;
-}
-
 .numero-tel {
     font-size: 1.4em;
 }
-
+/* reglage du bouton de validation de formulaire de manière plus design */
 #btn-form {
     position: relative;
     background-color: var(--bg-black);
@@ -70,7 +71,7 @@ label,
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
 }
-
+/* lorsqu'on survole le bouton de validation */
 #btn-form:hover {
     transition-duration: 0.1s;
     background-color: #3A3A3A;
@@ -89,12 +90,14 @@ label,
     box-shadow: 0 0 10px 40px white;
 }
 
+/* effet goude d'eau blanche suite au clic */
 #btn-form:active:after {
     box-shadow: 0 0 0 0 white;
     opacity: 1;
     transition: 0s;
 }
 
+/* lorsque le bouton a été cliqué => celui-ci remonte légèrement */
 #btn-form:active {
     top: 2px;
 }

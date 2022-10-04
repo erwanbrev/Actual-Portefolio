@@ -22,11 +22,11 @@
     --white-text: #F2F2F2;
 }
 
-/* design pour MAC OS X 1440 / 680 */
+/* design pour MAC OS X 1440 / 943 */
 
 /* eviter la redondance pour display : flex */
 header,
-.click-menu ul,
+.click-btn ul,
 .title-main-home,
 .title-second-home,
 .present-article,
@@ -61,7 +61,7 @@ footer,
 /* couleur de la typographie qui n'est pas sur fond clair */
 body,
 header,
-.click-menu a,
+.click-btn a,
 .title-main-home,
 .title-second-home,
 .title-aside,
@@ -101,7 +101,7 @@ footer {
 }
 
 header,
-.click-menu ul,
+.click-btn ul,
 .present-article,
 .news-container,
 .school-article,
@@ -151,21 +151,22 @@ aside {
         -3px -3px 3px rgb(0 0 0 / 10%);
 }
 
-/* effacement visuel du menu-burger utilisé dans le cas de la version mobile */
-.click-menu-burger {
+/* effacement visuel du btn-burger utilisé dans le cas de la version mobile */
+.click-btn-burger,
+.menu-burger-nav {
     display: none;
 }
 
-.click-menu {
+.click-btn {
     width: 24vw;
     font-size: 1em;
 }
 
-.click-menu ul {
+.click-btn ul {
     justify-content: space-evenly;
 }
 
-.click-menu a:hover {
+.click-btn a:hover {
     text-decoration: underline;
     text-underline-offset: .6em;
 }
@@ -338,12 +339,94 @@ footer {
         flex-direction: row-reverse;
     }
 
-    .click-menu {
+    .click-btn {
         display: none;
     }
 
-    .click-menu-burger {
+    /* creation du bouton burger qui permettra d'acceder à un btn burger */
+    .click-btn-burger {
         display: block;
+    }
+
+    .click-btn-burger>span {
+        display: block;
+        width: 28px;
+        height: 2px;
+        border-radius: 9999px;
+        background-color: var(--bg-black);
+    }
+
+    .click-btn-burger>span:not(:last-child) {
+        margin-bottom: 7px;
+    }
+
+    .click-btn-burger,
+    .click-btn-burger>span {
+        transition: all .4s ease-in-out;
+    }
+
+    .click-btn-burger.active {
+        transition-delay: .8s;
+        transform: rotate(45deg);
+    }
+
+    .click-btn-burger.active>span:nth-child(2) {
+        width: 0;
+    }
+
+    .click-btn-burger.active>span:nth-child(1),
+    .click-btn-burger.active>span:nth-child(3) {
+        transition-delay: .4s;
+    }
+
+    .click-btn-burger.active>span:nth-child(1) {
+        transform: translateY(9px);
+    }
+
+    .click-btn-burger.active>span:nth-child(3) {
+        transform: translateY(-9px) rotate(90deg);
+    }
+
+    /* creation du menu burger */
+    .menu-burger-nav {
+        display: inline-block;
+        background: linear-gradient(var(--bg-black), var(--bg-beige));
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        width: 60%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        overflow: hidden;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+        height: 100vh;
+    }
+
+    .menu-burger-nav a {
+        color: var(--white-text);
+    }
+
+    .menu-burger-nav.open {
+        transform: translateX(-5%);
+    }
+
+    /* personnalisation des liens présents dans le menu burger */
+    .menu-burger-ul {
+        display: flex;
+        flex-direction: column;
+        line-height: 8vh;
+        height: 100%;
+        justify-content: space-between;
+        font-size: 1.1em;
+    }
+
+    .menu-burger-ul div {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        margin: 20% 0;
     }
 
     /* reglage du titre principal */
@@ -435,7 +518,7 @@ footer {
 
 @media screen and (min-width: 1500px) {
 
-    .click-menu {
+    .click-btn {
         width: 20vw;
         font-size: 1.4em;
     }

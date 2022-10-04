@@ -4,12 +4,16 @@
     margin: 4% auto;
     border-radius: 2em;
     flex-direction: column;
-    padding: 2%;
+    padding: 3%;
     text-align: justify;
 }
 
-strong {
-    font-weight: 300;
+.legal-case h2 {
+    margin-top: 2vh;
+}
+
+.legal-case a {
+    color: var(--white-text);
 }
 
 /* creation de la responsive mobile (500px)  */
@@ -17,5 +21,6 @@ strong {
 @media screen and (max-width: 500px) {
     .legal-case {
         width: 80vw;
+        padding: 5%;
     }
 }

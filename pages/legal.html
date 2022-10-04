@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description permettant d'avoir des informations sur le site visité sans avoir encore cliqué sur le lien, suite à la recherche sur un navigateur -->
+    <meta name="description"
+        content="Vous pourrez consulter les Mentions Légales concernant le Portefolio d'Erwan Brévault.">
+    <!-- ajout d'une typographie -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./img/icones/icons8-objectif-16.png" />
+    <!-- ajout d'une favicon -->
+    <link rel="shortcut icon" href="../img/icones/favicon-color.ico" type="image/x-icon">
+    <!-- lien d'un fichier CSS -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../design/legal.css">
-    <title>Mentions Légales du Portefolio d'Erwan Brévault</title>
+    <title>Mentions Légales du Portefolio d'Erwan Brévault - Développement Web</title>
 </head>
 
 <!-- checkCookie() va afficher le bandeau de cookie si non accepté-->
@@ -20,17 +26,28 @@
         <div>
             <a href="../index.html"><img src="../img/icones/logo-96x96.png" alt="logo-du-développeur" id="logo"></a>
         </div>
-        <nav class="click-menu">
+        <nav class="click-btn">
             <ul>
-                <li><a href="../pages/front.html">Front-End</a></li>
-                <li><a href="../pages/contact.html">Me contacter</a></li>
+                <li><a href="./front.html">Front-End</a></li>
+                <li><a href="./contact.html">Me contacter</a></li>
             </ul>
         </nav>
         <!-- menu burger -->
-        <nav class="click-menu-burger">
-            <ul>
-                <li><a href="../pages/front.html">Front-End</a></li>
-                <li><a href="../pages/contact.html">Me contacter</a></li>
+        <div class="click-btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-burger-nav ">
+            <ul class="menu-burger-ul">
+                <div>
+                    <li><a href="./front.html">Front-End</a></li>
+                    <li><a href="./contact.html">Me contacter</a></li>
+                </div>
+                <div>
+                    <li><a href="./legal.html">Mentions Légales</a></li>
+                    <li><a href="./privacy.html">Policy Privacy</a></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -38,33 +55,27 @@
     <main>
         <h1 class="title-main-home">Mentions Légales</h1>
         <section class="legal-case" itemscope>
-            <h2>Propriétaire et créateur</h2>
-            <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie
-                numérique, il est précisé aux utilisateurs du site www.erwan.brevault.fr l'identité des différents
-                intervenants dans le cadre de sa réalisation et de son suivi :</p>
+            <p>Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la
+                Confiance dans l’Economie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et
+                visiteurs du site www.erwan.brevault.fr les présentes <strong>mentions légales</strong>.</p>
+            <h2><strong>Editeur</strong></h2>
             <p itemtype="https://schema.org/Person"><strong itemprop="name"> Erwan Brévault</strong></p>
             <address>2 Allée Max Leban, 35400 Saint-Malo, France</address>
-            <h2>Hébergeur internet</h2>
-            <p>OVH SAS au capital de 10 174 560 € </p>
+            <a href="./contact.html"></a>
+            <h2><strong> Hébergeur internet</strong></h2>
+            <p><em><a href="https://www.ovhcloud.com/fr/">OVH SAS</a></em> au capital de 10 174 560 € </p>
             <p>RCS Lille Métropole 424 761 419 00045</p>
             <p>Code APE 2620Z N° TVA : FR 22 424 761 419</p>
-            <p>Siège social : 2 rue Kellermann - 59100 Roubaix - France</p>
-            <p>Président : Michel Paulin OVH SAS est une filiale de la société OVH Groupe SA, société immatriculée au
-                RCS
-                de Lille sous le numéro 537 407 926 sise 2</p>
-            <address>Rue Kellermann, 59100 Roubaix</address>
+            <address>2 rue Kellermann - 59100 Roubaix - France</address>
             <h2>Licences</h2>
-            <p> <a href="https://icones8.fr/"> <strong>Icons8</strong> </a>pour les icônes de réseaux sociaux présentes
-                sur le site</p>
-            <p> <a href="https://www.google.fr/maps/@48.6303622,-2.0701087,15z"> <strong>Google Maps</strong> </a> pour
-                les captures d'écran de la page d'accueil</p>
-            <p></p>
-            <h2></h2>
-            <p></p>
-            <h2></h2>
-            <p></p>
-            <h2></h2>
-            <p></p>
+            <p> <a href="https://icones8.fr/"> <em>Icons8</em> </a>pour les icônes de réseaux sociaux présentes
+                sur le site.</p>
+            <p> <a href="https://www.google.fr/maps/@48.6303622,-2.0701087,15z"> <em>Google Maps</em> </a> pour
+                les captures d'écran de la page d'accueil.</p>
+            <h2>Collecte de données et loi informatique et libertés</h2>
+            <p>Voir notre <i><a href="./privacy.html">politique de confidentialité</a></i>.</p>
+            <h2>Loi applicable et juridiction</h2>
+            <p>Les présentes Mentions Légales sont régies par la loi française.</p>
         </section>
     </main>
     <!-- inclusion de javascript pour l'utilisation de cookie et le bouton burger version mobile et tablette -->

@@ -1,0 +1,25 @@
+.info,
+.cart-container {}
+
+.info {
+    width: 100vw;
+}
+
+.cart-container {
+    width: 100vw;
+    height: min-content;
+    border-radius: 4em;
+}
+
+.cart {
+    width: fit-content;
+    border-radius: 2em;
+}
+
+strong {
+    font-weight: 300;
+}
+
+em {
+    font-style: normal;
+}

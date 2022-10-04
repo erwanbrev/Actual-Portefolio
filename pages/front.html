@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description permettant d'avoir des informations sur le site visité sans avoir encore cliqué sur le lien, suite à la recherche sur un navigateur -->
+    <meta name="description"
+        content="Les projets sont ainsi regroupés en cartes individuelles avec possibilité pour certains, de les tester directement sur l'interface du Portefolio.">
+    <!-- ajout d'une typographie -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../img/icones/icons8-objectif-16.png" />
+    <!-- ajout d'une favicon -->
+    <link rel="shortcut icon" href="../img/icones/favicon-color.ico" type="image/x-icon">
+    <!-- lien d'un fichier CSS -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../design/front.css">
     <title>Création de sites internet Front-End - Erwan Brévault</title>
 </head>
 
@@ -17,17 +24,46 @@
     <!-- en-tête -->
     <header>
         <div>
-            <a href="../index.html" id="logo">EB</a>
+            <a href="../index.html"><img src="../img/icones/logo-96x96.png" alt="logo-du-développeur" id="logo"></a>
         </div>
-        <nav class="click-menu">
-            <a href="./front.html">Front-End</a>
-            <!-- <a href="./pages/back.html">Back-End</a> -->
-            <a href="./contact.html">Me contacter</a>
+        <nav class="click-btn">
+            <ul>
+                <li><a href="./front.html">Front-End</a></li>
+                <li><a href="./contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+        <!-- menu burger -->
+        <div class="click-btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-burger-nav ">
+            <ul class="menu-burger-ul">
+                <div>
+                    <li><a href="./front.html">Front-End</a></li>
+                    <li><a href="./contact.html">Me contacter</a></li>
+                </div>
+                <div>
+                    <li><a href="./legal.html">Mentions Légales</a></li>
+                    <li><a href="./privacy.html">Policy Privacy</a></li>
+                </div>
+            </ul>
         </nav>
     </header>
     <!-- contenu du site -->
     <main>
         <h1 class="title-main-home">Création de sites internet Front-End !</h1>
+        <!-- article concernant mon profil -->
+        <article class="news-container">
+            <section class="latest-news">
+                <h2 class="title-second-home" id="title-second-home-mobile">Projets Front-End</h2>
+                <p>Vous retrouverez ici les <em>projets</em> effectués seul ou en groupe durant l’année de
+                    <strong>Front-End</strong>, que ce soit dans un cadre éducatif ou
+                    personnel.
+                </p>
+            </section>
+        </article>
     </main>
     <!-- inclusion de javascript pour l'utilisation de cookie et le bouton burger version mobile et tablette -->
     <script src="../script.js"></script>

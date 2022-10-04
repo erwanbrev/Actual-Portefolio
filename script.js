@@ -73,7 +73,7 @@ formbutton("create", {
             label: "Email:",
             name: "email",
             required: true,
-            placeholder: "votre@email.com"
+            placeholder: "default@exemple.com"
         },
         {
             type: "textarea",
@@ -85,10 +85,20 @@ formbutton("create", {
     ],
     styles: {
         title: {
-            backgroundColor: "black"
+            backgroundColor: "#0F0F0F"
         },
         button: {
-            backgroundColor: "black"
+            backgroundColor: "#0F0F0F"
         }
     }
+});
+
+// ouverture du menu burger par clic sur le bouton burger
+const btnBurger = document.querySelector(".click-btn-burger");
+//affichage du menu burger suite au clic
+const menuBurger = document.querySelector(".menu-burger-nav");
+// fonction créée pour ouvrir le menu burger à l'aide du clic
+btnBurger.addEventListener("click", () => {
+    btnBurger.classList.toggle("active");
+    menuBurger.classList.toggle("open");
 });
