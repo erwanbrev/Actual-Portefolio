@@ -102,3 +102,19 @@ btnBurger.addEventListener("click", () => {
     btnBurger.classList.toggle("active");
     menuBurger.classList.toggle("open");
 });
+
+// fermeture bouton mobile
+// burger2.addEventListener("click", () => {
+//     mobileNav.classList.toggle("mobile-nav-active");
+//     overlayCheck();
+//     burger2.classList.toggle("toggle");
+// });
+
+// function overlayCheck(){
+//     if (mobileNav.classList.contains('mobile-nav-active')) {
+//         return overlay.classList.add('active');
+//     }
+//     else{
+//         return overlay.classList.remove('active');
+//     }
+// }

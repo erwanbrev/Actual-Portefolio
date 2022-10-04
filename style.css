@@ -391,8 +391,8 @@ footer {
     .menu-burger-nav {
         display: inline-block;
         background: linear-gradient(var(--bg-black), var(--bg-beige));
-        border-top-right-radius: 2em;
-        border-bottom-right-radius: 2em;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
         width: 60%;
         top: 0;
         left: 0;
@@ -426,7 +426,13 @@ footer {
         flex-direction: column;
         list-style: none;
         align-items: center;
-        margin: 20% 0;
+        margin: 30% 0;
+    }
+
+    #title-burger {
+        margin: auto;
+        font-size: 1em;
+        color: var(--bg-beige);
     }
 
     /* reglage du titre principal */
