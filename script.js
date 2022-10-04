@@ -104,3 +104,41 @@ btnBurger.addEventListener("click", () => {
     btnBurger.classList.toggle("active");
     menuBurger.classList.toggle("open");
 });
+
+//fonction click ouvre extrait ou le cache
+const overlayJoke = document.querySelector("display-extract");
+// const openJoke = element.style.visibility = 'visible';
+overlayJoke.addEventListener('click', openJoke);
+
+function openJoke(overlayJoke) {
+    let choice;
+    if (overlayJoke == 'click') {
+        choice = 'visible';
+    }
+    else {
+        choice = 'hidden';
+    }
+    return choice
+
+}
+
+//extrait projet dad jokes
+const button = document.querySelector('.container button');
+const jokeText = document.querySelector('.container p');
+const APICALL = "https://icanhazdadjoke.com/";
+
+button.addEventListener('click', getJoke);
+
+
+async function getJoke() {
+    const config = {
+        headers: {
+            "Accept": 'application/json'
+        }
+    }
+    const jokedata = await fetch(APICALL, config);
+    const data = await jokedata.json();
+    jokeText.innerHTML = data.joke;
+
+
+}

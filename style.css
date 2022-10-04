@@ -22,7 +22,7 @@
     --white-text: #F2F2F2;
 }
 
-/* design pour MAC OS X 1440 / 943 */
+/* design pour MAC OS X 1440 / 683 */
 
 /* eviter la redondance pour display : flex */
 header,
@@ -47,7 +47,11 @@ label,
 aside,
 aside div,
 /* classes legal.css */
-.legal-case {
+.legal-case,
+/* classes front.css */
+.cart,
+.display-extract,
+.container-joke {
     display: flex;
 }
 
@@ -85,7 +89,10 @@ header,
 
 header a:hover,
 .design-ext-link,
-aside a {
+#dwnld-btn a,
+aside a,
+/* lien avec front.css */
+.cart a {
     color: var(--bg-beige-deep);
 }
 
@@ -94,8 +101,6 @@ aside a {
 #info-footer,
 #info-footer a,
 .numero-tel,
-.legal,
-.privacy,
 footer {
     color: var(--white-text);
 }
@@ -126,14 +131,19 @@ header {
 .content-split,
 footer,
 /* lien legal.css */
-.legal-case {
+.legal-case,
+/* lien front.css */
+.cart-container {
     background: linear-gradient(to left, var(--bg-beige-deep), var(--bg-beige));
 }
 
 .content-article,
 footer,
 #click-menu-footer,
-#info-footer {
+#info-footer,
+/* liens avec front.css */
+.cart,
+.container-joke {
     flex-direction: column;
 }
 
@@ -145,7 +155,9 @@ footer,
 /* definition d'une ombre autour des cadres principaux */
 .size-img-home-article,
 form,
-aside {
+aside,
+/* lien avec front.css */
+.cart {
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 3px 3px 3px rgb(0 0 0 / 10%),
         -3px -3px 3px rgb(0 0 0 / 10%);
@@ -166,7 +178,10 @@ aside {
     justify-content: space-evenly;
 }
 
-.click-btn a:hover {
+#dwnld-btn,
+.click-btn a:hover,
+/* lien avec front.css */
+.cart a {
     text-decoration: underline;
     text-underline-offset: .6em;
 }
@@ -235,6 +250,10 @@ footer,
     width: 18%;
     height: auto;
     border-radius: 50%;
+}
+
+#dwnld-btn {
+    margin-top: 4vh;
 }
 
 /* separateur annoncant une thématique */
@@ -479,6 +498,10 @@ footer {
     #profile-picture {
         width: 14em;
         margin: 6% auto;
+    }
+
+    #dwnld-btn {
+        text-align: center;
     }
 
     /* separateur annoncant une thématique */

@@ -1,0 +1,16 @@
+/* creation de la responsive ordinateur à partir de 1500px  */
+
+@media screen and (min-width: 1500px) {}
+
+/* creation de la responsive inferieur a un ecran de mac (px)  */
+
+@media screen and (max-width: 1362px) {}
+
+
+/* responsive tablette ou mi ecran */
+
+@media screen and (max-width:900px) {}
+
+/* creation de la responsive mobile (500px)  */
+
+@media screen and (max-width: 500px) {}
