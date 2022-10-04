@@ -278,7 +278,7 @@ footer,
 /* definition de la taille d'une image sur la page d'accueil */
 .size-img-home-article {
     margin: 5vh auto;
-    width: 36em;
+    width: 29em;
     height: auto;
     border-radius: 2em;
     justify-content: center;
@@ -331,9 +331,9 @@ footer {
     margin: 0;
 }
 
-/* creation de la responsive mobile (500px)  */
+/* responsive tablette ou mi ecran */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:900px) {
 
     header {
         flex-direction: row-reverse;
@@ -368,6 +368,16 @@ footer {
     .click-btn-burger.active {
         transition-delay: .8s;
         transform: rotate(45deg);
+        position: absolute;
+        z-index: 100;
+        margin: 15% 12% auto;
+    }
+
+    /* couleur du bouton burger / croix lorsque le menu est ouvert  */
+    .click-btn-burger.active>span {
+        background-color: var(--bg-black);
+        width: 60px;
+        height: 3.6px;
     }
 
     .click-btn-burger.active>span:nth-child(2) {
@@ -393,14 +403,16 @@ footer {
         background: linear-gradient(var(--bg-black), var(--bg-beige));
         border-top-right-radius: 1em;
         border-bottom-right-radius: 1em;
-        width: 60%;
+        width: 40%;
         top: 0;
         left: 0;
-        position: fixed;
+        position: absolute;
+        z-index: 20;
         overflow: hidden;
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
         height: 100vh;
+        flex-direction: row;
     }
 
     .menu-burger-nav a {
@@ -429,16 +441,29 @@ footer {
         margin: 30% 0;
     }
 
+    /* nom du site dans le menu burger */
     #title-burger {
         margin: auto;
         font-size: 1em;
         color: var(--bg-beige);
+    }
+}
+
+
+/* creation de la responsive mobile (500px)  */
+
+@media screen and (max-width: 500px) {
+
+    /* creation du menu burger */
+    .menu-burger-nav {
+        width: 60%;
     }
 
     /* reglage du titre principal */
     .title-main-home {
         font-size: 2.2em;
         padding: 6%;
+        text-align: center;
     }
 
     #title-second-home-mobile {

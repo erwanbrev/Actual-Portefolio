@@ -97,24 +97,10 @@ formbutton("create", {
 const btnBurger = document.querySelector(".click-btn-burger");
 //affichage du menu burger suite au clic
 const menuBurger = document.querySelector(".menu-burger-nav");
+//fermeture du menu burger par clic sur fond noir droit
+// const closingArea = document.querySelector("#bg-black-burger")
 // fonction créée pour ouvrir le menu burger à l'aide du clic
 btnBurger.addEventListener("click", () => {
     btnBurger.classList.toggle("active");
     menuBurger.classList.toggle("open");
 });
-
-// fermeture bouton mobile
-// burger2.addEventListener("click", () => {
-//     mobileNav.classList.toggle("mobile-nav-active");
-//     overlayCheck();
-//     burger2.classList.toggle("toggle");
-// });
-
-// function overlayCheck(){
-//     if (mobileNav.classList.contains('mobile-nav-active')) {
-//         return overlay.classList.add('active');
-//     }
-//     else{
-//         return overlay.classList.remove('active');
-//     }
-// }
