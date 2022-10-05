@@ -8,8 +8,6 @@
     <!-- meta description permettant d'avoir des informations sur le site visité sans avoir encore cliqué sur le lien, suite à la recherche sur un navigateur -->
     <meta name="description"
         content="Le portefolio d'Erwan Brévault est l'endroit où vous pourrez retrouver des informations sur sa vie scolaire ainsi que des projets web.">
-    <!-- ajout d'une typographie -->
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     <!-- ajout d'une favicon -->
     <link rel="shortcut icon" href="./img/icones/favicon-color.ico" type="image/x-icon">
     <!-- lien d'un fichier CSS -->
@@ -36,8 +34,8 @@
             <span></span>
         </div>
         <nav class="menu-burger-nav ">
-            <ul class="menu-burger-ul">
-                <h2 id="title-burger">Portefolio d'Erwan Brévault</h2>
+            <ul class="menu-burger-ul" id="title-burger">
+                <h2>Portefolio d'Erwan Brévault</h2>
                 <div>
                     <li><a href="./pages/front.html">Front-End</a></li>
                     <li><a href="./pages/contact.html">Me contacter</a></li>
@@ -50,8 +48,8 @@
         </nav>
     </header>
     <!-- contenu du site -->
-    <main>
-        <h1 class="title-main-home" itemscope itemtype="https://schema.org/Person" itemprop="name">Portefolio d'Erwan
+    <main itemscope>
+        <h1 class="title-main-home" itemtype="https://schema.org/Person" itemprop="givenName">Portefolio d'Erwan
             Brévault</h1>
         <!-- article concernant mon profil -->
         <article class="news-container">
@@ -77,7 +75,7 @@
                     <a href="./ErwanBrevaultCV.pdf" download>Cliquer pour accéder au CV</a>
                 </p>
             </section>
-            <img src="./img/home/profile-pic.jpg" alt="photo-de-profil-erwan-brevault" id="profile-picture">
+            <img src="./img/home/profile-pic.webp" alt="photo de profil erwan brevault" id="profile-picture">
         </article>
         <!-- separateur annoncant le theme suivant -->
         <section class="content-split">
@@ -97,7 +95,7 @@
                         site de l'IMTS</a>
                 </div>
                 <div class="school-address">
-                    <img class="size-img-home-article" src="./img/home/imtsMaps.png"
+                    <img class="size-img-home-article" src="./img/home/imtsMaps.webp"
                         alt="vue-carte-maps-de-linstitut-marie-thérèse-solacroup">
                     <a
                         href="https://www.google.fr/maps/place/Institut+Marie+Th%C3%A9r%C3%A8se+Solacroup/@48.6400984,-2.077812,17z/data=!4m13!1m7!3m6!1s0x480e80a206269f5d:0x7f5e30f69d3173a9!2s4+Av.+du+Ch%C3%A2teau+H%C3%A9bert,+35800+Dinard!3b1!8m2!3d48.6400949!4d-2.0756233!3m4!1s0x480e80a24963d133:0x45f54d27b35b9bff!8m2!3d48.6399737!4d-2.0756617">
@@ -123,8 +121,8 @@
                         Providence</a>
                 </div>
                 <div class="school-address">
-                    <img class="size-img-home-article" src="./img/home/laproMaps.png"
-                        alt="vue-carte-maps-du-lycee-la-providence">
+                    <img class="size-img-home-article" src="./img/home/laproMaps.webp"
+                        alt="vue carte maps du lycee la providence">
                     <a
                         href="https://www.google.fr/maps/place/27+Rue+de+Toulouse,+35400+Saint-Malo/@48.6465931,-2.0293407,17z/data=!3m1!4b1!4m5!3m4!1s0x480e811a06b40aed:0xaa586bf1ff930d0!8m2!3d48.6465896!4d-2.027152">
                         <address>27 Rue de Toulouse, 35400 SAINT-MALO</address>
@@ -143,8 +141,8 @@
                         lycée Maupertuis</a>
                 </div>
                 <div class="school-address">
-                    <img class="size-img-home-article" src="./img/home/maupertuisMaps.png"
-                        alt="vue-carte-maps-du-lycee-maupertuis">
+                    <img class="size-img-home-article" src="./img/home/maupertuisMaps.webp"
+                        alt="vue carte maps du lycee maupertuis">
                     <a
                         href="https://www.google.fr/maps/place/Lyc%C3%A9e+Maupertuis+-+Enseignement+G%C3%A9n%C3%A9ral,+Technologique+et+Professionnel/@48.6405228,-2.008971,17z/data=!3m2!4b1!5s0x480e81429591a2b1:0x6189a6c1d9f67ff0!4m5!3m4!1s0x480e8142eb14e883:0x8c4421b2ce0283ce!8m2!3d48.6405193!4d-2.0067823">
                         <address>1 Rue Pierre de Coubertin, 35400 SAINT-MALO</address>
@@ -173,8 +171,8 @@
             </div>
             <div id="info-footer">
                 <h4 class="line-height-footer-right">© Erwan Brévault</h4>
-                <a href="./pages/legal.html" class="legal">Mentions Légales</a>
-                <a href="./pages/privacy.html" class="privacy">Politique de Confidentialité</a>
+                <a href="./pages/legal.html">Mentions Légales</a>
+                <a href="./pages/privacy.html">Politique de Confidentialité</a>
             </div>
         </section>
         <div>
