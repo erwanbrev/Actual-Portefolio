@@ -106,29 +106,21 @@ btnBurger.addEventListener("click", () => {
 });
 
 //fonction click ouvre extrait ou le cache
-const overlayJoke = document.querySelector("display-extract");
-// const openJoke = element.style.visibility = 'visible';
-overlayJoke.addEventListener('click', openJoke);
-
-function openJoke(overlayJoke) {
-    let choice;
-    if (overlayJoke == 'click') {
-        choice = 'visible';
-    }
-    else {
-        choice = 'hidden';
-    }
-    return choice
-
-}
+const overlayJoke = document.querySelector(".btn-extract");
+const sectJoke = document.querySelector(".display-extract");
+const sizeCartExtract = document.querySelector(".cart:nth-child(3)");
+overlayJoke.addEventListener('click', () => {
+    overlayJoke.classList.toggle("active");
+    sectJoke.classList.toggle("open");
+    sizeCartExtract.classList.toggle("active");
+});
 
 //extrait projet dad jokes
-const button = document.querySelector('.container button');
-const jokeText = document.querySelector('.container p');
+const button = document.querySelector('.container-joke button');
+const jokeText = document.querySelector('.container-joke p');
 const APICALL = "https://icanhazdadjoke.com/";
 
 button.addEventListener('click', getJoke);
-
 
 async function getJoke() {
     const config = {
@@ -139,6 +131,4 @@ async function getJoke() {
     const jokedata = await fetch(APICALL, config);
     const data = await jokedata.json();
     jokeText.innerHTML = data.joke;
-
-
 }

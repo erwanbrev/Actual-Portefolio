@@ -1,6 +1,11 @@
 figcaption,
 .cart a {
-    padding: 1em;
+    padding: .6em;
+}
+
+.container-joke p,
+button {
+    margin-top: 2em;
 }
 
 .cart-container {
@@ -18,9 +23,14 @@ figcaption,
 }
 
 .cart {
+    height: 55vh;
     align-items: center;
     background-color: var(--bg-white);
     border-radius: 2em;
+}
+
+.cart:nth-child(3).active {
+    height: fit-content;
 }
 
 .cart img {
@@ -30,7 +40,8 @@ figcaption,
 }
 
 figcaption {
-    margin-top: -2%;
+    margin-top: 1em;
+    text-align: justify;
 }
 
 strong {
@@ -42,7 +53,24 @@ em {
 }
 
 /* extrait projet dad jokes */
+.btn-extract {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-beige);
+    width: 12em;
+    height: 2em;
+    color: var(--white-text);
+    margin: 3% auto;
+}
+
 .display-extract {
+    display: none;
+}
+
+.display-extract.open {
+    display: block;
+    position: relative;
     height: 36%;
     width: 100%;
     align-items: center;
@@ -50,18 +78,20 @@ em {
 }
 
 .container-joke {
-    width: 70%;
-    align-items: center;
+    display: flex;
+    width: 80%;
     background-color: yellowgreen;
-    border-radius: 8px;
-    margin: 12% 0 0 0;
-    padding: 4rem;
+    border-radius: 1em;
+    margin: 6% auto;
+    padding: 2rem;
+    align-items: center;
 }
 
 .container-joke p {
-    font-size: 2rem;
+    font-size: 1.2rem;
     line-height: 3.5rem;
     text-align: justify;
+    line-height: 5vh;
 }
 
 button {
@@ -71,14 +101,13 @@ button {
     cursor: pointer;
     padding: 1rem;
     width: fit-content;
-    margin-top: 4rem;
     border: none;
     border-radius: 4px;
     box-shadow: 2px 2px 2px rgba(17, 17, 17, 0.74);
     align-self: center;
 }
 
-button:active {
+button {
     transform: scale(0.95);
 }
 
