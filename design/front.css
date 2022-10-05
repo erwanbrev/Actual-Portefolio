@@ -111,12 +111,23 @@ button {
     transform: scale(0.95);
 }
 
+/* responsive grand ecran*/
+@media screen and (min-width:1500px) {
+    .cart {
+        height: 46vh;
+    }
+}
+
 /* responsive tablette ou mi ecran */
 
 @media screen and (max-width:900px) {
     .cart-container {
         grid-template-columns: repeat(auto-fill, 42%);
         gap: 10vh;
+    }
+
+    .cart {
+        height: 52vh;
     }
 }
 

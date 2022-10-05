@@ -38,7 +38,6 @@ header,
 #info-footer,
 #click-menu-footer,
 footer,
-#cookie-law p,
 .school-article,
 /* classes contact.css */
 .formulaire,
@@ -75,14 +74,12 @@ header,
 .content-split,
 .design-ext-link:hover,
 aside a:hover,
-#content-footer a:hover,
-#cookie-law p {
+#content-footer a:hover {
     color: var(--black-text);
 }
 
 body,
-header,
-#cookie-law {
+header {
     background-color: var(--bg-white);
 }
 
@@ -109,8 +106,7 @@ header,
 .click-btn ul,
 .present-article,
 .news-container,
-.school-article,
-#cookie-law {
+.school-article {
     flex-direction: row;
 }
 
@@ -327,29 +323,6 @@ footer {
 .line-height-footer-right {
     margin-bottom: 6%;
 }
-
-/* creation du bandeau de cookie avec CSS & JS */
-#cookie-law {
-    height: 16vh;
-    position: fixed;
-    bottom: 0;
-    max-width: 100%;
-    width: 100%;
-    left: 0;
-    transition: .2s;
-    justify-content: space-between;
-    padding: 2%;
-    border-top: 1px solid var(--bg-beige-deep);
-}
-
-#cookie-law p {
-    justify-content: center;
-    padding: 3%;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 0;
-}
-
 /* responsive tablette ou mi ecran */
 
 @media screen and (max-width:900px) {

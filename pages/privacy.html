@@ -7,20 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta description permettant d'avoir des informations sur le site visité sans avoir encore cliqué sur le lien, suite à la recherche sur un navigateur -->
     <meta name="description"
-        content="Vous pouvez contacter Erwan Brévault par cette page, via des formulaires de contact ou encore à l'aide des coordonnées ci-joint.">
+        content="Vous pourrez ainsi consulter la Politique de Confidentialité concernant le Portefolio d'Erwan Brévault.">
     <!-- ajout d'une typographie -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     <!-- ajout d'une favicon -->
     <link rel="shortcut icon" href="../img/icones/favicon-color.ico" type="image/x-icon">
     <!-- lien d'un fichier CSS -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../design/legal.css">
     <link rel="stylesheet" href="../design/privacy.css">
     <title>Politique de Confidentialité du Portefolio d'Erwan Brévault - Développement Web</title>
 </head>
 
-<!-- checkCookie() va afficher le bandeau de cookie si non accepté-->
-
-<body onload="checkCookie()">
+<body>
     <!-- en-tête -->
     <header>
         <div>
@@ -47,47 +46,108 @@
                 </div>
                 <div>
                     <li><a href="./legal.html">Mentions Légales</a></li>
-                    <li><a href="./privacy.html">Policy Privacy</a></li>
+                    <li><a href="./privacy.html">Politique de Confidentialité</a></li>
                 </div>
             </ul>
         </nav>
     </header>
     <!-- contenu du site -->
+
     <main>
-        <h1 class="title-main-home">Portefolio d'Erwan Brévault</h1>
-        <form action="POST">
-            <input type="email" name="mel" id="">
-        </form>
+        <h1 class="title-main-home">Politique de Confidentialité</h1>
+        <section class="legal-case" itemscope>
+            <p itemtype="https://schema.org/Person">Cette <strong>politique de confidentialité</strong> régit la manière
+                dont <strong itemprop="name"> Erwan Brévault</strong>, dont le siège se
+                situe2 Allée Max Leban, 35400 Saint-Malo, France collecte, utilise, conserve et divulgue les
+                informations recueillies
+                auprès des utilisateurs. Cette politique de confidentialité s'applique à ce site et à tous les
+                projets web exposés par Erwan Brévault.</p>
+            <h2>Informations personnelles</h2>
+            <p>Nous pouvons collecter des informations d'identification personnelle auprès de nos clients
+                de diverses manières, y compris, mais sans s'y limiter, lorsque les visiteurs utilisent une des options
+                de contact existantes sur notre site, notamment le formulaire appuyé par la plateforme Formspree.
+                Les visiteurs
+                peuvent visiter le site de façon anonyme. Nous collecterons des informations d'identification
+                personnelle auprès des
+                visiteurs uniquement s'ils nous soumettent volontairement ces informations. Les visiteurs ne sont dans
+                aucune obligation de fournir
+                des informations d'identification personnelles.</p>
+            <h2><strong>Partage de vos informations personnelles</strong></h2>
+            <p>Nous ne vendons/échangeons/louons pas vos informations
+                personnelles à un quelconque tiers.</p>
+            <h2>Comment nous utilisons les informations collectées</h2>
+            <p> Notre site www.erwanbrevault.fr peut collecter
+                et utiliser les adresses e-mail des clients les ayant saisies lors d'un précédent contact avec le
+                développeur, afin de répondre de manière optimale aux
+                demandes d'assistance, ou questions liées aux contenus exposés aux utilisateurs.</p>
+            <h2>Sites web tiers</h2>
+            <p>Le visiteur peut trouver divers éléments sur notre site qui renvoient aux sites web et/ou aux contenus de
+                nos
+                partenaires et/ou outils de travail. Nous ne
+                contrôlons pas le
+                contenu ou les liens qui apparaissent sur ces sites web et ne sommes pas responsables des pratiques
+                employées par
+                les sites web liés à ou visitables à partir de notre plateforme. De plus, ces sites web ou services, y
+                compris leur
+                contenu et leurs liens, peuvent être en constante évolution. Ces sites web et services peuvent avoir
+                leurs propres
+                politiques de confidentialité et politiques de service client. La navigation et l'interaction sur tout
+                autre site
+                web sont soumises à leurs propres conditions d'utilisation et politiques de confidentialité.</p>
+            <h2>Modification de cette
+                politique de confidentialité</h2>
+            <p>Nous pouvons mettre à jour cette politique de confidentialité à tout moment. Nous encourageons
+                nos clients
+                à vérifier fréquemment cette page pour tout autre changement.</p>
+            <h2>Politique de gestion des cookies</h2>
+            <p>Ce site web n'utilise pas encore de cookies mais est en projet pour les ajouter prochainement, sur notre
+                site. Celui-ci ayant été effectué pendant et après une année de formation spécifique dans le
+                développement web front-end où coder les cookies n'a pas été spécialement abordé.</p>
+            <!-- Ce site web utilise
+                des cookies afin d'améliorer l'expérience des utilisateurs, suivre les visites venant de nos partenaires
+                et analyser
+                de façon globale, à l'aide d'informations agrégées, la manière dont les utilisateurs non inscrits
+                utilisent le site.
+                Ces cookies ne sont utilisés qu'avec le consentement exprès de chaque utilisateur conformément règlement
+                général sur
+                la protection des données (RGPD) en vigueur en Union Européenne. La politique de gestion cookies
+                détaillée est
+                disponible à cette adresse : https://erwanbrevault.fr/pages/policy-cookies.html</p> -->
+            <h2> Votre acceptation de ces conditions</h2>
+            <p>En vous inscrivant sur ce site, vous signifiez votre acceptation de cette politique de confidentialité.
+                Si vous
+                n'acceptez pas cette politique de confidentialité, veuillez ne pas restersur la plateforme.</p>
+        </section>
     </main>
-    <!-- inclusion de javascript pour l'utilisation de cookie et le bouton burger version mobile et tablette -->
+    <!-- inclusion de javascript pour l'utilisation du bouton burger version mobile et tablette -->
     <script src="../script.js"></script>
     <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <!-- pied de page -->
     <footer>
         <div>
-            <a href="./index.html"><img src="./img/icones/logo-color-96x96.png" alt="logo-du-développeur"
+            <a href="./index.html"><img src="../img/icones/logo-color-96x96.png" alt="logo-du-développeur"
                     id="logo-footer"></a>
         </div>
         <section id="content-footer">
             <div id="click-menu-footer">
                 <h4 class="line-height-footer-left">Visiter les pages</h4>
                 <ul>
-                    <li><a href="./pages/front.html">Front-End</a></li>
-                    <li><a href="./pages/contact.html">Me contacter</a></li>
+                    <li><a href="../pages/front.html">Front-End</a></li>
+                    <li><a href="../pages/contact.html">Me contacter</a></li>
                 </ul>
             </div>
             <div id="info-footer">
                 <h4 class="line-height-footer-right">© Erwan Brévault</h4>
-                <a href="./pages/legal.html" class="legal">Mentions Légales</a>
-                <a href="./pages/privacy.html" class="privacy">Politique de Confidentialité</a>
+                <a href="../pages/legal.html" class="legal">Mentions Légales</a>
+                <a href="../pages/privacy.html" class="privacy">Politique de Confidentialité</a>
             </div>
         </section>
         <div>
-            <a href="https://github.com/erwanbrev" target="_blank"><img src="./img/icones/icons8-github-48.svg"
+            <a href="https://github.com/erwanbrev" target="_blank"><img src="../img/icones/icons8-github-48.svg"
                     alt="icone-github-svg"></a>
-            <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img src="./img/icones/icons8-linkedin.svg"
-                    alt="icone-linkedin-svg"></a>
+            <a href="https://www.linkedin.com/in/erwanbrev/" target="_blank"><img
+                    src="../img/icones/icons8-linkedin.svg" alt="icone-linkedin-svg"></a>
         </div>
     </footer>
 </body>
