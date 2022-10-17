@@ -295,7 +295,7 @@ footer,
 /* definition de la taille d'une image sur la page d'accueil */
 .size-img-home-article {
     margin: 5vh auto;
-    width: 29em;
+    width: 36em;
     height: auto;
     border-radius: 2em;
     justify-content: center;
