@@ -96,7 +96,7 @@ em {
 
 button {
     font-size: 1.2rem;
-    background-color: var(--bg-black);
+    background-color: var(--btn-black);
     color: lightgrey;
     cursor: pointer;
     padding: 1rem;

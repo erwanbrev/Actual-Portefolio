@@ -1,27 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Titillium+Web:wght@400;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Titillium+Web:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Titillium Web", sans-serif;
+    /* font-family: "Titillium Web", sans-serif; */
+    font-family: 'Rajdhani', sans-serif;
 }
 
 /* couleurs prédéfinies dès que le fichier style.css est appelé */
-:root {
-    /* arriere-plan mode sombre */
-    --bg-black: #0F0F0F;
-    /* arriere-plan de base */
-    --bg-white: #FAFAFA;
-    /* arriere-plan beige */
-    --bg-beige: #D39E72;
-    /* arriere-plan beige foncé */
-    --bg-beige-deep: #A07959;
-    /* textes */
-    --black-text: #1F1F1F;
-    --white-text: #F2F2F2;
+
+@media (prefers-color-scheme: light) {
+
+    :root {
+        /* arriere-plan clair */
+        --bg-white: #FAFAFA;
+        /* arriere-plan sombre */
+        --bg-black: #0F0F0F;
+        /* arriere-plan beige */
+        --bg-beige: #D39E72;
+        /* arriere-plan beige foncé */
+        --bg-beige-deep: #A07959;
+        /* textes */
+        --black-text: #1F1F1F;
+        --white-text: #F2F2F2;
+        /* btn */
+        --btn-black: #0F0F0F;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        /* arriere-plan clair */
+        --bg-black: #FAFAFA;
+        /* arriere-plan sombre */
+        --bg-white: #0F0F0F;
+        /* arriere-plan beige */
+        --bg-beige: #D39E72;
+        /* arriere-plan beige foncé */
+        --bg-beige-deep: #A07959;
+        /* textes */
+        --black-text: #F2F2F2;
+        --white-text: #1F1F1F;
+        /* btn */
+        --btn-black: #0F0F0F;
+    }
 }
 
 /* design pour MAC OS X 1440 / 683 */
@@ -95,7 +121,7 @@ aside a,
     color: var(--bg-beige-deep);
 }
 
-#logo-footer,
+.logo-footer,
 #click-menu-footer a,
 #info-footer,
 #info-footer a,
@@ -145,9 +171,25 @@ footer,
     flex-direction: column;
 }
 
-#logo,
-#logo-footer {
-    width: 70px;
+.logo,
+.logo-footer {
+    width: 140px;
+}
+
+#lightmode {
+    display: block;
+}
+
+#nightmode {
+    display: none;
+}
+
+#lightmode.hidden {
+    display: none;
+}
+
+#nightmode.display {
+    display: block;
 }
 
 /* definition d'une ombre autour des cadres principaux */
@@ -188,8 +230,8 @@ ul {
     list-style: none;
 }
 
-#logo {
-    margin-top: 9%;
+.logo {
+    margin-top: 2%;
 }
 
 /* reglage du corps du site ( contenus principaux ) */
@@ -304,11 +346,7 @@ footer,
 
 /* reglage du pied de page */
 footer {
-    height: 46vh;
-}
-
-#logo-footer {
-    margin-top: 20%;
+    height: 60vh;
 }
 
 #content-footer {
@@ -417,13 +455,6 @@ footer {
     .menu-burger-nav.open {
         transform: translateX(-5%);
     }
-    /* #burger-opacity.open {
-        background-color: var(--bg-black);
-        opacity: .6;
-        width: 100vw;
-        z-index: 4;
-        position: relative;
-    } */
 
     /* personnalisation des liens présents dans le menu burger */
     .menu-burger-ul {

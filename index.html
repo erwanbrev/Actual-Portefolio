@@ -19,7 +19,13 @@
     <!-- en-tête -->
     <header>
         <div>
-            <a href="./index.html"><img src="./img/icones/logo-96x96.png" alt="logo-du-développeur" id="logo"></a>
+            <a href="./index.html">
+                <picture>
+                    <source srcset="./img/icones/logo-new-dark.png" alt="logo-du-développeur-sombre"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="./img/icones/logo-new-light.png" alt="logo-du-développeur-clair" class="logo">
+                </picture>
+            </a>
         </div>
         <nav class="click-btn">
             <ul>
@@ -164,8 +170,8 @@
     <!-- pied de page -->
     <footer>
         <div>
-            <a href="./index.html"><img src="./img/icones/logo-color-96x96.png" alt="logo-du-développeur"
-                    id="logo-footer"></a>
+            <a href="./index.html"><img src="./img/icones/logo-new-dark-footer.png" alt="logo-du-développeur"
+                    class="logo-footer"></a>
         </div>
         <section id="content-footer">
             <div id="click-menu-footer">

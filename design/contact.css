@@ -54,12 +54,12 @@ input {
 }
 
 .numero-tel {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 /* reglage du bouton de validation de formulaire de manière plus design */
 #btn-form {
     position: relative;
-    background-color: var(--bg-black);
+    background-color: var(--btn-black);
     border: none;
     padding: 4px;
     width: 14vw;

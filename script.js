@@ -34,19 +34,11 @@ formbutton("create", {
 const btnBurger = document.querySelector(".click-btn-burger");
 //affichage du menu burger suite au clic
 const menuBurger = document.querySelector(".menu-burger-nav");
-// const bgOpacity = document.querySelector("#bg-opacity");
-//fermeture du menu burger par clic sur fond noir droit
-// const closingArea = document.querySelector("#bg-black-burger")
 // fonction créée pour ouvrir le menu burger à l'aide du clic
 btnBurger.addEventListener("click", () => {
     btnBurger.classList.toggle("active");
     menuBurger.classList.toggle("open");
 });
-
-// if (btnBurger.classList.toggle("active") == true){
-//     bgOpacity.classList.toggle("open");
-// }
-
 //fonction click ouvre / ferme extrait
 const overlayJoke = document.querySelector(".btn-extract");
 const sectJoke = document.querySelector(".display-extract");
