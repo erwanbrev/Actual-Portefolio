@@ -27,7 +27,7 @@ button {
     grid-template-columns: 100%;
     justify-items: center;
     align-items: center;
-    height: 21em;
+    height: 22.2em;
     background-color: var(--bg-white);
     border-radius: 2em;
 }
@@ -113,14 +113,6 @@ button {
 button {
     transform: scale(0.95);
 }
-
-/* responsive grand ecran*/
-@media screen and (min-width:1500px) {
-    /* .cart {
-        height: 46vh;
-    } */
-}
-
 /* responsive tablette ou mi ecran */
 
 @media screen and (max-width:900px) {
@@ -128,10 +120,6 @@ button {
         grid-template-columns: repeat(auto-fill, 42%);
         gap: 10vh;
     }
-
-    /* .cart {
-        height: 52vh;
-    } */
 }
 
 /* creation de la responsive mobile (500px)  */
@@ -142,10 +130,6 @@ button {
         padding: 10em 1em;
         gap: 8vh;
     }
-
-    /* .cart {
-        height: 46vh;
-    } */
 }
 
 /* creation de la responsive mobile : samsung A51 (440px/840)  */
