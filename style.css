@@ -79,7 +79,7 @@ aside div,
 /* classes legal.css */
 .legal-case,
 /* classes front.css */
-.cart,
+/* .cart, */
 .display-extract,
 .container-joke {
     display: flex;
@@ -178,9 +178,12 @@ footer,
     flex-direction: column;
 }
 
-.logo,
-.logo-footer {
+.logo {
     width: 140px;
+}
+
+.logo-footer {
+    width: 100px;
 }
 
 /* definition d'une ombre autour des cadres principaux */
@@ -212,7 +215,9 @@ aside,
 #dwnld-btn,
 .click-btn a:hover,
 /* lien avec front.css */
-.cart a {
+.cart a,
+.content-present-article a,
+.design-ext-link {
     text-decoration: underline;
     text-underline-offset: .6em;
 }
@@ -231,7 +236,9 @@ body {
     height: 100vh;
 }
 
-body a {
+body a,
+.school-address a,
+#no-underline {
     text-decoration: none;
 }
 
@@ -273,6 +280,14 @@ footer,
     padding: 4%;
 }
 
+.latest-news p {
+    margin-bottom: 1em;
+}
+
+.latest-news p:nth-child(4) {
+    margin-bottom: 0;
+}
+
 /* descente du logo présent à droite du langage appris */
 .latest-news img {
     margin-bottom: -2vh;
@@ -299,7 +314,8 @@ footer,
 }
 
 #school-split {
-    height: 90vh;
+    margin-top: 3em;
+    height: 29em;
     width: .1vw;
     background-color: var(--bg-beige-deep);
     border: none;
@@ -311,7 +327,7 @@ footer,
 }
 
 .content-article {
-    padding: 4%;
+    padding: 3%;
     width: 50%;
 }
 
@@ -328,18 +344,18 @@ footer,
     border-radius: 2em;
 }
 
-
 /* reglage du pied de page */
 footer {
-    height: 60vh;
+    height: 48vh;
 }
 
 #content-footer {
     width: 50vw;
     justify-content: space-between;
     line-height: 5vh;
-    margin-bottom: 1%;
+    margin: -2% auto 1%;
 }
+
 
 .line-height-footer-left {
     margin-bottom: 10%;
@@ -534,7 +550,7 @@ footer {
 
     /* reglage du pied de page */
     footer {
-        height: 52vh;
+        /* height: 52vh; */
         font-size: 1em;
     }
 
@@ -611,12 +627,17 @@ footer {
     }
 
     .size-img-home-article {
-        width: 100%;
+        width: 52em;
+    }
+
+    #school-split {
+        margin-top: 4em;
+        height: 39em;
     }
 
     /* reglage du pied de page */
     footer {
-        height: 40vh;
+        /* height: 40vh; */
         font-size: 1.2em;
     }
 }

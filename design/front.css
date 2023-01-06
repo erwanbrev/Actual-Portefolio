@@ -1,11 +1,10 @@
-figcaption,
-.cart a {
-    padding: .6em;
+figcaption {
+    padding: .6em 1.2em;
 }
 
 .container-joke p,
 button {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .cart-container {
@@ -17,14 +16,18 @@ button {
     margin-bottom: 6%;
     padding: 6em 2em;
     justify-content: center;
-    gap: 14vh;
+    gap: 8vh;
     /* clip-path donne une forme  */
-    clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 94%);
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 94%);
 }
 
 .cart {
-    height: 55vh;
+    display: grid;
+    grid-template-rows: 11.5em repeat(3, auto);
+    grid-template-columns: 100%;
+    justify-items: center;
     align-items: center;
+    height: 21em;
     background-color: var(--bg-white);
     border-radius: 2em;
 }
@@ -37,10 +40,10 @@ button {
     border-top-right-radius: 2em;
     border-top-left-radius: 2em;
     width: 100%;
+    height: 100%;
 }
 
 figcaption {
-    margin-top: 1em;
     text-align: justify;
 }
 
@@ -71,7 +74,7 @@ em {
 .display-extract.open {
     display: block;
     position: relative;
-    height: 36%;
+    /* height: 36%; */
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -113,9 +116,9 @@ button {
 
 /* responsive grand ecran*/
 @media screen and (min-width:1500px) {
-    .cart {
+    /* .cart {
         height: 46vh;
-    }
+    } */
 }
 
 /* responsive tablette ou mi ecran */
@@ -126,9 +129,9 @@ button {
         gap: 10vh;
     }
 
-    .cart {
+    /* .cart {
         height: 52vh;
-    }
+    } */
 }
 
 /* creation de la responsive mobile (500px)  */
@@ -140,9 +143,9 @@ button {
         gap: 8vh;
     }
 
-    .cart {
+    /* .cart {
         height: 46vh;
-    }
+    } */
 }
 
 /* creation de la responsive mobile : samsung A51 (440px/840)  */
