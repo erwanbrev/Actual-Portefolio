@@ -3,6 +3,8 @@
 # This is an assignment for my classes to present content about my personal life, consisting of several sections:
 
 - ### About me
-- ### Projects
-- ### Links to my external networks
+- ### Front End's projects
+- ### Back End's projects
+<!-- - ### Internships -->
+- ### Twince links to GitHub & LinkedIn
 - ### Multiple contact options
