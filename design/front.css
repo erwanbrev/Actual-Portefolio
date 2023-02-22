@@ -113,6 +113,7 @@ button {
 button {
     transform: scale(0.95);
 }
+
 /* responsive tablette ou mi ecran */
 
 @media screen and (max-width:900px) {
@@ -127,15 +128,7 @@ button {
 @media screen and (max-width: 500px) {
     .cart-container {
         grid-template-columns: repeat(auto-fill, 80%);
-        padding: 10em 1em;
+        padding: 7em auto;
         gap: 8vh;
-    }
-}
-
-/* creation de la responsive mobile : samsung A51 (440px/840)  */
-
-@media screen and (max-width: 440px) {
-    .cart-container {
-        padding: 12em 1em;
     }
 }
