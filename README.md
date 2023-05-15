@@ -1,4 +1,4 @@
-## Click [here](https://www.erwanbrevault.fr/) to go to the published site !
+## Click [here](https://erwanbrev.github.io/Actual-Portefolio/) to go to the published site !
 
 # This is an assignment for my classes to present content about my personal life, consisting of several sections:
 
