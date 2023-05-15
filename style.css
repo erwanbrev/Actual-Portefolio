@@ -295,6 +295,26 @@ ul {
     margin-top: 2%;
 }
 
+/* cookies */
+#cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid grey;
+}
+
+#cookie-consent-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
 /* reglage du corps du site ( contenus principaux ) */
 body {
     margin-top: 12vh;
